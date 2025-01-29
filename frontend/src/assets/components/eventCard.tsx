@@ -14,11 +14,11 @@ const EventCard: React.FC<EventProps> = ({ event }) => {
           className="w-full h-48 object-cover"
         />
         <div className="absolute inset-0 flex justify-center items-center bg-black bg-opacity-50">
-          <h1 className="text-yellow-400 text-4xl font-bold">UNSW</h1>
+          <h1 className="text-yellow-400 text-4xl">UNSW</h1>
         </div>
       </div>
       <div className="p-8">
-        <h2 className="text-2xl font-semibold text-yellow-500 text-center">{event.name}</h2>
+        <h2 className="text-2xl text-yellow-500 text-center">{event.name}</h2>
         <div className="mt-10 space-y-4 text-sm text-gray-600">
           <p>Date: <span className="font-medium">{event.date}</span></p>
           <p>Time: <span className="font-medium">{event.time}</span></p>
