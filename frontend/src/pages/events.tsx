@@ -1,4 +1,5 @@
 import EventCard from "../assets/components/eventCard";
+import Footer from "../assets/components/footer";
 import { Event, EVENTS } from "../assets/eventDetailsTemplate";
 
 const upComingEvent: Event =
@@ -27,6 +28,9 @@ const Events = () => {
             <EventCard key={event.id} event={event} />
           ))}
         </div>
+      </div>
+      <div>
+        <Footer />
       </div>
     </>
   )
