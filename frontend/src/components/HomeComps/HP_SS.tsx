@@ -7,7 +7,7 @@ import "@fontsource/poppins";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 
-export const theme = createTheme({
+const theme = createTheme({
     typography: {
         fontFamily: "Poppins, sans-serif",
     },
@@ -55,7 +55,7 @@ const HP_SS = () => {
                         animate={{ opacity: 1 }}
                         transition={{ duration: 1 }}
                         >
-                            <Typography variant="h2" color="black">
+                            <Typography variant="h2" color="orange">
                                 {displayedText}
                             </Typography>
                         </motion.div>
@@ -70,7 +70,7 @@ const HP_SS = () => {
                     >
                         <Typography
                         variant="h4"
-                        color="black"
+                        color="orange"
                         >
                         UNSW
                         </Typography>
@@ -85,7 +85,7 @@ const HP_SS = () => {
                     >
                         <Typography
                         variant="h4"
-                        color="black"
+                        color="orange"
                         >
                         Myanmar Student Society
                         </Typography>
