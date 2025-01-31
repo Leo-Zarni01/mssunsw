@@ -8,7 +8,6 @@ const HP_SS = () => {
     return(
         <Grid container >
             <Grid size={12}>
-                {/* <Box position="relative" display="inline-block" sx={{ width: '100%'}}> */}
                     <img src={logo} alt="Image" style={{ width: '100%', height: "600px", border: '1px solid black' }} />
                     <Box
                         position="absolute"
@@ -55,17 +54,17 @@ const HP_SS = () => {
                         Myanmar Student Society
                         </Typography>
                     </Box>
-                {/* </Box> */}
             </Grid>
             <Grid size={1.5}></Grid>
             <Grid size={3} container 
-            sx={{ height: '40vh' }} // Full height of the viewport
-            alignItems="center" // Vertical centering
-            justifyContent="center" >
+            sx={{ height: '40vh' }} 
+            alignItems="center" 
+            justifyContent="center" 
+            >
                 <Grid 
-                    item 
-                    textAlign="center" 
-                    xs={12} // Takes up the full width
+                item 
+                textAlign="center" 
+                xs={12} 
                 >
                 <Typography variant="h6" gutterBottom>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
