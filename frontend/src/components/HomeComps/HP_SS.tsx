@@ -16,7 +16,8 @@ const theme = createTheme({
 
 const HP_SS = () => {
 
-    const text = "Mingalar Par";
+    // const text = "မဂလာပါ။";
+    const text = "မင်္ဂလာပါ။"
     const [displayedText, setDisplayedText] = useState("");
     const [index, setIndex] = useState(0);
 
