@@ -5,9 +5,13 @@ import Grid from '@mui/material/Grid';
 import fb_logo from '../assets/facebook.png'
 import insta_logo from '../assets/instagram.png'
 import tiktok_logo from '../assets/tiktok.png'
+import { theme } from './HomeComps/HP_SS';
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+
 
 const NavBar = () => {
   return (
+    <ThemeProvider theme={theme}>
     <Grid container spacing={2} columns={16}>
         <Grid item xs={12.5}>
             <Stack direction="row" spacing={2} sx={{ m: 2 }}>
@@ -50,6 +54,7 @@ const NavBar = () => {
             </Stack>
         </Grid>
     </Grid>
+    </ThemeProvider>
     
 
   );
