@@ -1,6 +1,13 @@
+import NavBar from "./NavBar"
+import HP_FS from "./HomeComps/HP_FS"
+import HP_SS from "./HomeComps/HP_SS"
+
 const HomePage = () => {
     return (
-        <h1> Replace with components </h1>
+        <div>
+            <NavBar />
+            <HP_SS />
+        </div>     
     )
 }
 
