@@ -1,5 +1,5 @@
 import EventCard from "../components/EventCard"; import Footer from "../components/Footer";
-import { Event, EVENTS } from "../assets/eventDetailsTemplate";
+import { Event, EVENTS } from "../components/eventDetailsTemplate";
 
 const upComingEvent: Event =
 {
