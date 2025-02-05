@@ -1,5 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import HomePage from './components/HomePage.tsx';
+import GetInvolved from './components/GetInvolved.tsx';
+
 
 const PageList = () => {
     return (
@@ -8,7 +10,7 @@ const PageList = () => {
             <Route path='/aboutus' />
             <Route path='/events' />
             <Route path='/team' />
-            <Route path='/getinvolved' />
+            <Route path='/getinvolved' element={<GetInvolved />}/>
         </Routes>
     )
 }
