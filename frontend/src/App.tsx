@@ -1,12 +1,13 @@
 import './App.css'
-import Events from './pages/events';
+import PageList from './PageList.tsx';
+import { BrowserRouter } from 'react-router';
 
 function App() {
   return (
-    <>
-      <div><Events /></div>
-    </>
-  )
+    <BrowserRouter>
+      <PageList />
+    </BrowserRouter>
+  );
 }
 
 export default App
