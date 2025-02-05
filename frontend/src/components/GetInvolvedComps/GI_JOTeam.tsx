@@ -1,28 +1,14 @@
 import { Typography, Button, Stack } from '@mui/material';
 import Grid from '@mui/material/Grid2';
-import logo from '../../assets/MSS_Logo.webp'
 
 
 const GI_JOTeam = () => {
     return (
-        // <Box
-        // sx={{
-        //     backgroundImage: `url(${logo})`,
-        //     backgroundSize: "cover",
-        //     backgroundRepeat: "no-repeat",
-        //     border: '1px solid black',
-        //     marginTop: "5rem"
-        // }}
-        // >
-        <Grid container textAlign="center"
+        <Grid container textAlign="center" 
         sx={{
-            // backgroundImage: `url(${logo})`,
-            // backgroundSize: "cover",
-            // backgroundPosition: "center",
-            // backgroundRepeat: "no-repeat",
             border: '1px solid black',
             borderRadius: "40px",
-            marginTop: "5rem",
+            marginTop: "4rem",
             mx: "1rem"
         }}
         >
@@ -91,7 +77,7 @@ const GI_JOTeam = () => {
                             color: "white",
                             fontsize: "0.01em"
                         }}
-                        >Click here to apply</Typography>
+                        >Click here to apply!!</Typography>
                     </Stack>
                 </Button>
             </Grid>

@@ -2,6 +2,7 @@ import GI_JoinMSS from "./GetInvolvedComps/GI_JoinMSS";
 import NavBar from "./NavBar"
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import GI_JOTeam from "./GetInvolvedComps/GI_JOTeam";
+import GI_Bft from "./GetInvolvedComps/GI_Bft";
 import { motion } from "framer-motion";
 
 
@@ -29,7 +30,14 @@ const GetInvolved = () => {
                 transition={{ duration: 0.8, delay:0.5, ease: "easeOut" }}
                 >
                     <GI_JOTeam />
-                </motion.div>                
+                </motion.div>  
+                <motion.div
+                initial={{ opacity: 0, y: 50 }} // Start hidden and below
+                animate={{ opacity: 1, y: 0 }} // Fade in and move up
+                transition={{ duration: 0.8, delay:1, ease: "easeOut" }}
+                >
+                    <GI_Bft />
+                </motion.div> 
             </ThemeProvider>
         </div>     
     )
