@@ -50,7 +50,7 @@ const GI_JOTeam = () => {
                 sx={{
                     margin: "1rem",
                     mx: "6rem",
-                    height: "11rem",
+                    height: {xs: "15rem", sm: "9rem", md: "17rem"},
                     overflow: "auto",
                 }}
                 >
@@ -93,7 +93,7 @@ const GI_JOTeam = () => {
                 sx={{
                     margin: "1rem",
                     mx: "6rem",
-                    height: "11rem",
+                    height: {xs: "20rem", sm: "12rem", md: "17rem"},
                     overflow: "auto",
                 }}
                 >

@@ -15,8 +15,8 @@ const GI_Bft = () => {
                     border: '1px solid black',
                     borderRadius: "40px",
                     padding: "1rem",
-                    mx: "5rem",
-                    my: "2rem" 
+                    mx: {xs: "2rem", md: "4rem"},
+                    my: {xs: "1rem", md: "2rem"} 
                 }}
                 >
                     <Typography variant="h5" sx={{color: "red", my: "1rem"}}>Member benefits</Typography>
@@ -52,8 +52,8 @@ const GI_Bft = () => {
                     border: '1px solid black',
                     borderRadius: "40px",
                     padding: "1rem",
-                    mx: "5rem",
-                    my: "2rem"  
+                    mx: {xs: "2rem", md: "4rem"},
+                    my: {xs: "1rem", md: "2rem"}  
                 }}
                 >
                     <Typography variant="h5" sx={{color: "green", my: "1rem"}}>Team benefits</Typography>

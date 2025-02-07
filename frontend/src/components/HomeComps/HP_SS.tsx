@@ -94,7 +94,7 @@ const HP_SS = () => {
             </Grid>
             <Grid size={1.5}></Grid>
             <Grid size={3} container 
-            sx={{ height: '40vh' }} 
+            // sx={{ height: '40vh' }} 
             alignItems="center" 
             justifyContent="center" 
             >
