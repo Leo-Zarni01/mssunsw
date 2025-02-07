@@ -6,23 +6,17 @@ import AboutTheEvent from './AboutTheEvent';
 import EventRegistrationForm from './EventRegistrationForm';
 
 const styleTitle = {
-    width: '100vw',
-    height: 100,
-    bgcolor: 'rgb(255, 167, 0, 0.23)',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    fontWeight: 'bold',
+	width: '100vw',
+	height: 100,
+	bgcolor: 'rgb(255, 167, 0, 0.23)',
+	display: 'flex',
+	justifyContent: 'center',
+	alignItems: 'center',
+	fontWeight: 'bold',
 }
 
-const UpcomingEventDetails = () => {
+const UpcomingEventDetailsPage = () => {
 	return (
-		// event name {title}
-		// event poster or image
-		// About the event  // component
-		// event details    // component
-		// register form    
-
 		<>
 			{/* navigation */}
 			<Box sx={{ margin: '1rem' }}> Nav Bar </Box>
@@ -57,4 +51,4 @@ const UpcomingEventDetails = () => {
 	);
 }
 
-export default UpcomingEventDetails;
+export default UpcomingEventDetailsPage;

@@ -1,15 +1,13 @@
 import { Routes, Route } from 'react-router-dom';
 import HomePage from './components/HomePage.tsx';
-import UpcomingEventDetails from './components/UpcomingEventDetails.tsx';
-
+import UpcomingEventDetailsPage from './components/UpcomingEventDetailsPage.tsx';
 const PageList = () => {
-    return (
-        <Routes>
-            <Route path='/' element={<HomePage />} />
-            <Route path='/events' element={<UpcomingEventDetails />} /> {/* /events/:id */}
-            
-        </Routes>
-    )
+	return (
+    <Routes>
+      <Route path='/' element={<HomePage />} />
+      <Route path='/events' element={<UpcomingEventDetailsPage />} /> {/* /events/:id */}
+    </Routes>
+	)
 }
 
 export default PageList;
