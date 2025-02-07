@@ -1,7 +1,7 @@
 import { FaFacebook } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa";
-import Logo from "../assets/images/socials/Logo.png";
+import Logo from "../assets/images/Logo.png";
 import { Link } from "react-router";
 
 const Footer = () => {

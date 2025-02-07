@@ -7,7 +7,7 @@ import TimelineSeparator from '@mui/lab/TimelineSeparator';
 import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
-import Logo from "../assets/images/socials/Logo.png";
+import Logo from "../assets/images/Logo.png";
 import { TimelineOppositeContent } from "@mui/lab";
 import { FC } from "react";
 import Footer from "../components/Footer";
