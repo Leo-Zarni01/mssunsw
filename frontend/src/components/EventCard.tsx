@@ -1,4 +1,4 @@
-import { Event } from "../eventDetailsTemplate";
+import { Event } from "../components/eventDetailsTemplate.ts";
 
 interface EventProps {
   event: Event
