@@ -20,9 +20,9 @@ const HP_TS = () => {
         <ThemeProvider theme={theme}>
         <Grid
         sx={{
-            backgroundColor: "orange",
+            // backgroundColor: "orange",
             height: "40rem",
-            opacity: "0.3"
+            // opacity: "0.3"
         }}
         >
             <Grid size={12} textAlign="center" sx={{paddingTop: "2rem"}}>

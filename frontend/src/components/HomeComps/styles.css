@@ -41,6 +41,6 @@ body {
 /* Optional: Change size */
 .swiper-button-next::after,
 .swiper-button-prev::after {
-  font-size: 20px !important; /* Adjust size if needed */
-  font-weight: bold !important;
+  font-size: 25px !important; /* Adjust size if needed */
 }
+
