@@ -104,8 +104,8 @@ const HP_SS = () => {
                         </Typography>
                     </Box>
             </Grid>
-            <Grid size={1.5}></Grid>
-            <Grid size={3} container 
+            <Grid size={{xs: 0.5, sm: 1.5, md: 1.5}}></Grid>
+            <Grid size={{xs: 5, sm: 3, md: 3}} container 
             // sx={{ height: '40vh' }} 
             alignItems="center" 
             justifyContent="center" 
@@ -132,7 +132,7 @@ const HP_SS = () => {
                 </Button>
                 </Grid>
             </Grid>
-            <Grid size={1.5} sx={{height: "550px"}}></Grid>
+            <Grid size={{xs: 0.5, sm: 1.5, md: 1.5}} sx={{height: "550px"}}></Grid>
             <Grid size={6}>
                 <img src={logo} alt="Image" style={{ width: '100%', height: "550px", border: '1px solid black' }} />
             </Grid>   

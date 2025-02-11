@@ -1,5 +1,5 @@
 import GI_JoinMSS from "./GetInvolvedComps/GI_JoinMSS";
-import NavBar from "./NavBar"
+import NavBar from "./NavBarBig"
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import GI_JOTeam from "./GetInvolvedComps/GI_JOTeam";
 import GI_Bft from "./GetInvolvedComps/GI_Bft";
