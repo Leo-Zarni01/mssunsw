@@ -42,10 +42,10 @@ const HP_SS = () => {
         <ThemeProvider theme={theme}>
         <Grid container >
             <Grid size={12}>
-                    <img src={logo} alt="Image" style={{ width: '100%', height: "600px", border: '1px solid black' }} />
+                    <img src={logo} alt="Image" style={{ width: '100%', height: "40rem", border: '1px solid black' }} />
                     <Box
                         position="absolute"
-                        top="25%"
+                        top={{xs: "33%", sm: "29%", md: "25%"}}
                         left="50%"
                         style={{
                         transform: 'translate(-50%, -50%)',
@@ -56,37 +56,49 @@ const HP_SS = () => {
                         animate={{ opacity: 1 }}
                         transition={{ duration: 1 }}
                         >
-                            <Typography variant="h2" color="orange">
+                            <Typography color="orange"
+                            sx={{
+                                fontSize: {xs: "2.8rem", sm: "3.4rem", md: "4rem"}
+                            }}
+                            >
                                 {displayedText}
                             </Typography>
                         </motion.div>
                     </Box>
                     <Box
                         position="absolute"
-                        top="35%"
+                        top={{xs: "45%", sm:"38%", md: "38%"}}
                         left="50%"
                         style={{
                         transform: 'translate(-50%, -50%)',
                         }}
                     >
                         <Typography
-                        variant="h4"
+                        // variant="h4"
                         color="orange"
+                        sx={{
+                            // fontSize: {xs: "3rem", sm: "2rem", md: "3rem"}
+                            fontSize: {xs: "1.5rem", sm:"1.8rem", md: "2.5rem"}
+                        }}
                         >
                         UNSW
                         </Typography>
                     </Box>
-                    <Box
+                    <Box size={12}
                         position="absolute"
-                        top="40%"
+                        top={{xs: "52%", sm: "43%", md: "44%"}}
                         left="50%"
+                        textAlign="center"
                         style={{
                         transform: 'translate(-50%, -50%)',
                         }}
                     >
                         <Typography
-                        variant="h4"
+                        // variant="h4"
                         color="orange"
+                        sx={{
+                            fontSize: {xs: "1.5rem", sm:"1.8rem", md: "2.5rem"}
+                        }}
                         >
                         Myanmar Student Society
                         </Typography>
