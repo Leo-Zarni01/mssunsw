@@ -84,8 +84,8 @@ const OurStory = () => {
       <Box
         bgcolor="#fff5d7"
       >
-        <Grid container spacing={2}>
-          <Grid size={6} padding={5}>
+        <Grid container spacing={1} columns={{xs: 4, lg: 12}}>
+          <Grid size={{xs: 4, lg: 6}} padding={5}>
             <Typography variant="h1" color="#ee6055" align="center">
               Mission
             </Typography>
@@ -93,7 +93,7 @@ const OurStory = () => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pulvinar, lectus nec sagittis varius, arcu est consequat dolor, vitae dapibus erat mi id velit. Suspendisse potenti. Duis volutpat, lacus eget lacinia vehicula, erat enim luctus urna, nec vestibulum elit erat nec purus.
             </Typography>
           </Grid>
-          <Grid size={6} padding={5}>
+          <Grid size={{xs: 4, lg: 6}} padding={5}>
             <Typography variant="h1" color="#8bb174" align="center">
               Vision
             </Typography>
