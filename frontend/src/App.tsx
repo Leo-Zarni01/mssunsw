@@ -1,12 +1,12 @@
-import { BrowserRouter as Router } from 'react-router-dom';
+import './App.css'
 import PageList from './PageList.tsx';
+import { BrowserRouter } from 'react-router';
 
 function App() {
-
   return (
-    <Router>
+    <BrowserRouter>
       <PageList />
-    </Router>
+    </BrowserRouter>
   );
 }
 

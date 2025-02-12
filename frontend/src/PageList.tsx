@@ -1,19 +1,20 @@
-import { Routes, Route } from 'react-router-dom';
-import HomePage from './components/HomePage.tsx';
-import OurStory from './components/OurStory.tsx';
-import UpcomingEventDetails from './components/UpcomingEventDetails.tsx';
-import PastEventPhotoGallery from './components/PastEventPhotoGallery.tsx'
+import { Routes, Route } from 'react-router';
+import Events from './pages/Events.tsx';
+import HomePage from './pages/HomePage.tsx';
+import OurStory from './pages/OurStory.tsx';
+import UpcomingEventDetails from './pages/UpcomingEventDetails.tsx';
+import PastEventPhotoGallery from './pages/PastEventPhotoGallery.tsx'
 
 const PageList = () => {
-    return (
-        <Routes>
-            <Route path='/' element={<HomePage />} />
-            <Route path='/ourstory' element={<OurStory />} />
-            <Route path='/events' element={<UpcomingEventDetails />} /> {/* /events/:id */}
-            <Route path='/events/:eventId/photos' element={<PastEventPhotoGallery />} /> {/* /events/:id/photos */}
-            
-        </Routes>
-    )
+  return (
+    <Routes>
+      <Route path='/' element={<HomePage />} />
+      <Route path='/ourstory' element={<OurStory />} />
+      <Route path='/events/1' element={<UpcomingEventDetails />} />
+      <Route path='/events/:eventId/photos' element={<PastEventPhotoGallery />} /> {/* /events/:id/photos */}
+      <Route path='/events' element={<Events />} />
+    </Routes>
+  )
 }
 
 export default PageList;
