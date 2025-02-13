@@ -61,7 +61,7 @@ const GI_JOTeam = () => {
                 <Button variant="contained" color="primary" size="medium"
                 sx={{
                     backgroundColor: "black",
-                    color: "orange",
+                    color: "#FFA700",
                     marginTop: "0.6rem",
                     px: "3.5rem",
                     py: "0.7rem",
@@ -105,7 +105,7 @@ const GI_JOTeam = () => {
                 <Button variant="contained" color="primary" size="medium"
                 sx={{
                     backgroundColor: "black",
-                    color: "orange",
+                    color: "#FFA700",
                     marginTop: "0.6rem",
                     px: "3.5rem",
                     py: "0.7rem",

@@ -59,7 +59,7 @@ const NavBarBig = () => {
                                 gutterBottom
                                 onClick={() => navigate(item.path)}
                                 sx={{ 
-                                    color: "orange",
+                                    color: "#FFA700",
                                     cursor: "pointer",
                                     transition: "color 0.3s ease", // Smooth color transition
                                     "&:hover": {
