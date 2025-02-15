@@ -7,7 +7,7 @@ import "../App.css";
 const MeetTheExecutives = () => {
   return (
     <>
-      <Typography variant="h6" sx={{ color: "#EE6055", display: "flex" , justifyContent: "center" }}> Meet The Executives </Typography>
+      <Typography variant="h5" sx={{ fontWeight: 'regular', color: "#EE6055", display: "flex" , justifyContent: "center" }}> Meet The Executives </Typography>
       <Swiper
         slidesPerView={1}
         spaceBetween={30}
