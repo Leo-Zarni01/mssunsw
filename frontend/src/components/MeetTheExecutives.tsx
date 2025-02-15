@@ -1,9 +1,8 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import { Typography } from "@mui/material";
-
 import MeetTheExecutivesSlide from './MeetTheExecutivesSlide';
-
+import "../App.css";
 
 const MeetTheExecutives = () => {
   return (
@@ -22,7 +21,7 @@ const MeetTheExecutives = () => {
         }}
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper"
+        className="meetExecSwiper"
       >
         <SwiperSlide style={{ height: '100%' }}> <MeetTheExecutivesSlide /> </SwiperSlide>
         <SwiperSlide style={{ height: '100%' }}> <MeetTheExecutivesSlide /> </SwiperSlide>

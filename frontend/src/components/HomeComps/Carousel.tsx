@@ -33,7 +33,7 @@ const Carousel = () => {
         }}
         pagination={true}
         modules={[EffectCoverflow, Pagination, Navigation]}
-        className="mySwiper"
+        className="eventsSwiper"
       >
         <SwiperSlide>
           <img src={logo} />

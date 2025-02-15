@@ -1,0 +1,9 @@
+.meetExecSwiper .swiper-pagination-bullet-active {
+  background-color: #EE6055 !important; /* Active bullet color */
+  opacity: 1; /* Fully visible */
+}
+
+.eventsSwiper .swiper-pagination-bullet-active {
+  background-color: #FFA700 !important; /* Active bullet color */
+  opacity: 1; /* Fully visible */
+}
