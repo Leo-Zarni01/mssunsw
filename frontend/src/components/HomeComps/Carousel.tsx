@@ -21,7 +21,7 @@ const Carousel = () => {
       <Swiper
         effect={'coverflow'}
         grabCursor={true}
-        centeredSlides={true}
+        centeredSlides={false}
         navigation={true}
         slidesPerView={'auto'}
         coverflowEffect={{

@@ -1,14 +1,13 @@
 import AboutTheEvent from "../components/AboutTheEvent";
 import EventDateTimeLoc from "../components/EventDateTimeLoc";
-import { Box, Typography } from '@mui/material';
+import { Box } from '@mui/material';
 import PastEventDetailsWovenPhotos from "../components/PastEventDetailsWovenPhotos";
+import NavBar from "../components/NavComps/NavBar";
 
 const PastEventDetails = () => {
   return (
     <>
-    {/* Nav Bar */}
-    <Typography> NavBar </Typography>
-    <Box sx={{ marginTop: '4rem' }}></Box>
+    <NavBar />
 
     <PastEventDetailsWovenPhotos />
 
