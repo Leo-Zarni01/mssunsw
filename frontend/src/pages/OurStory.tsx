@@ -7,10 +7,11 @@ import TimelineSeparator from '@mui/lab/TimelineSeparator';
 import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
-import Logo from "../assets/images/Logo.png";
+import Logo from "../assets/MSS_Logo.webp";
 import { TimelineOppositeContent } from "@mui/lab";
 import { FC } from "react";
 import Footer from "../components/Footer";
+import NavBar from "../components/NavComps/NavBar";
 
 const theme = createTheme({
   typography: {
@@ -65,6 +66,7 @@ const Timelinecard: FC<SomeComponentProps> = ({ time, activity, details, dotcolo
 const OurStory = () => {
   return (
     <ThemeProvider theme={theme}>
+      <NavBar isDark={false}/>
       <Typography variant="h1" align="center" color="#FFA700">
         Our Story
       </Typography>

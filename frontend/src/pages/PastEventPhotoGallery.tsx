@@ -6,6 +6,8 @@ import Dialog from '@mui/material/Dialog';
 import CloseIcon from "@mui/icons-material/Close";
 import ArrowBackIos from "@mui/icons-material/ArrowBackIos";
 import ArrowForwardIos from "@mui/icons-material/ArrowForwardIos";
+import NavBar from "../components/NavComps/NavBar";
+import Footer from "../components/Footer";
 
 const images = [
 
@@ -82,6 +84,7 @@ const PastEventPhotoGallery = () => {
     return (
         <ThemeProvider theme={theme} >
             <CssBaseline />
+            <NavBar isDark={true}/>
             <Typography variant="h1" color="#FFA700" align="center">
                 Fresher Welcome "{eventId}"
             </Typography>
@@ -107,8 +110,8 @@ const PastEventPhotoGallery = () => {
                 maxWidth={'md'}
                 sx={{
                     "& .MuiPaper-root": {
-                      backgroundColor: "transparent", // Makes the dialog itself transparent
-                      boxShadow: "none", // Removes default shadow
+                    backgroundColor: "transparent", // Makes the dialog itself transparent
+                    boxShadow: "none", // Removes default shadow
                     },
                     bgcolor: "black",
                 }}
@@ -171,7 +174,10 @@ const PastEventPhotoGallery = () => {
                     />
                 </Box>
             </Dialog>
+            <Footer />
         </ThemeProvider>
+        
+        
     );
 };
 
