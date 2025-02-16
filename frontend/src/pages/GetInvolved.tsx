@@ -17,7 +17,7 @@ const GetInvolved = () => {
     return (
         <div>
             <ThemeProvider theme={themeGetInvolved}>
-                <NavBar />
+                <NavBar isDark={false}/>
                 <motion.div
                 initial={{ opacity: 0, y: 50 }} // Start hidden and below
                 animate={{ opacity: 1, y: 0 }} // Fade in and move up

@@ -7,10 +7,11 @@ import TimelineSeparator from '@mui/lab/TimelineSeparator';
 import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
-import Logo from "../assets/images/Logo.png";
+import Logo from "../assets/MSS_Logo.webp";
 import { TimelineOppositeContent } from "@mui/lab";
 import { FC } from "react";
 import Footer from "../components/Footer";
+import NavBar from "../components/NavComps/NavBar";
 
 const theme = createTheme({
   typography: {
@@ -65,6 +66,7 @@ const Timelinecard: FC<SomeComponentProps> = ({ time, activity, details, dotcolo
 const OurStory = () => {
   return (
     <ThemeProvider theme={theme}>
+      <NavBar isDark={false}/>
       <Typography variant="h1" align="center" color="#FFA700">
         Our Story
       </Typography>
@@ -78,27 +80,27 @@ const OurStory = () => {
       </Box>
 
       <Typography variant="body1" align="center" padding={5}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pulvinar, lectus nec sagittis varius, arcu est consequat dolor, vitae dapibus erat mi id velit. Suspendisse potenti. Duis volutpat, lacus eget lacinia vehicula, erat enim luctus urna, nec vestibulum elit erat nec purus.
+      The Myanmar Students' Society is a university-based cultural organization dedicated to fostering a strong sense of community and vibrant environment among Burmese students. It serves as a home away from home, offering cultural events, social gatherings, and support networks to celebrate Myanmar’s culture.
       </Typography>
 
       <Box
         bgcolor="#fff5d7"
       >
-        <Grid container spacing={2}>
-          <Grid size={6} padding={5}>
+        <Grid container spacing={1} columns={{xs: 4, lg: 12}}>
+          <Grid size={{xs: 4, lg: 6}} padding={5}>
             <Typography variant="h1" color="#ee6055" align="center">
               Mission
             </Typography>
             <Typography variant="body1" align="center">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pulvinar, lectus nec sagittis varius, arcu est consequat dolor, vitae dapibus erat mi id velit. Suspendisse potenti. Duis volutpat, lacus eget lacinia vehicula, erat enim luctus urna, nec vestibulum elit erat nec purus.
+            Our mission is aimed at building a supportive and inclusive community for Burmese students through celebrating Myanmar’s rich culture. MSS aims to foster meaningful connections, memories and create a comfortable, familiar environment for Myanmar students.
             </Typography>
           </Grid>
-          <Grid size={6} padding={5}>
+          <Grid size={{xs: 4, lg: 6}} padding={5}>
             <Typography variant="h1" color="#8bb174" align="center">
               Vision
             </Typography>
             <Typography variant="body1" align="center">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pulvinar, lectus nec sagittis varius, arcu est consequat dolor, vitae dapibus erat mi id velit. Suspendisse potenti. Duis volutpat, lacus eget lacinia vehicula, erat enim luctus urna, nec vestibulum elit erat nec purus.
+            Our vision is to grow the reach of our society and create more meaningful events for our MSS’ members.
             </Typography>
           </Grid>
         </Grid>

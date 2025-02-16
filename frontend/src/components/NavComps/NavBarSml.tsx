@@ -6,7 +6,7 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { Box } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
-import { useState, useEffect } from "react";
+import { useState, useEffect, FC } from "react";
 import { FaFacebook } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa";
@@ -25,8 +25,11 @@ const navItems = [
     { label: "Get Involved", path: "/getinvolved" },
 ];
 
+type Args = {
+    isDark: boolean,
+};
 
-const NavBarSml = () => {
+const NavBarSml:FC<Args> = ({isDark}) => {
 
     const navigate = useNavigate();
     const [isOpen, setIsOpen] = useState(false);
@@ -76,19 +79,14 @@ const NavBarSml = () => {
             
             <Stack direction="row" spacing={2} >
                 <a href="https://www.facebook.com/mssunsw/" target="_blank">
-                  <FaFacebook className="size-6 sm:size-8 md:size-8"
-                //   size={30} 
-                  />
+                  {isDark ? <FaFacebook className="text-white size-6 sm:size-8 md:size-8"/> : <FaFacebook className="size-6 sm:size-8 md:size-8"/>}
+                  
                 </a>
                 <a href="https://www.instagram.com/mssunsw/" target="_blank">
-                  <FaInstagram className="size-6 sm:size-9 md:size-9"
-                //   size={33} 
-                  />
+                  {isDark ? <FaInstagram className="text-white size-6 sm:size-9 md:size-9"/> : <FaInstagram className="size-6 sm:size-9 md:size-9"/>}
                 </a>
                 <a href="https://www.tiktok.com/@mss.unsw" target="_blank">
-                  <FaTiktok className="size-6 sm:size-8 md:size-8"
-                //   size={28} 
-                  />
+                  {isDark ? <FaTiktok className="text-white size-6 sm:size-8 md:size-8"/> : <FaTiktok className="size-6 sm:size-8 md:size-8"/>}
                 </a>
             </Stack>
         </Stack>
@@ -138,7 +136,7 @@ const NavBarSml = () => {
                                     py: "1rem",
                                     transition: "color 0.3s ease", // Smooth color transition
                                     "&:hover": {
-                                    color: "black", // Change color on hover
+                                    color: isDark? "white" : "black", // Change color on hover
                                     }
                                 }}
                             >
