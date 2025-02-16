@@ -80,7 +80,7 @@ const OurStory = () => {
       </Box>
 
       <Typography variant="body1" align="center" padding={5}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pulvinar, lectus nec sagittis varius, arcu est consequat dolor, vitae dapibus erat mi id velit. Suspendisse potenti. Duis volutpat, lacus eget lacinia vehicula, erat enim luctus urna, nec vestibulum elit erat nec purus.
+      The Myanmar Students' Society is a university-based cultural organization dedicated to fostering a strong sense of community and vibrant environment among Burmese students. It serves as a home away from home, offering cultural events, social gatherings, and support networks to celebrate Myanmar’s culture.
       </Typography>
 
       <Box
@@ -92,7 +92,7 @@ const OurStory = () => {
               Mission
             </Typography>
             <Typography variant="body1" align="center">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pulvinar, lectus nec sagittis varius, arcu est consequat dolor, vitae dapibus erat mi id velit. Suspendisse potenti. Duis volutpat, lacus eget lacinia vehicula, erat enim luctus urna, nec vestibulum elit erat nec purus.
+            Our mission is aimed at building a supportive and inclusive community for Burmese students through celebrating Myanmar’s rich culture. MSS aims to foster meaningful connections, memories and create a comfortable, familiar environment for Myanmar students.
             </Typography>
           </Grid>
           <Grid size={{xs: 4, lg: 6}} padding={5}>
@@ -100,7 +100,7 @@ const OurStory = () => {
               Vision
             </Typography>
             <Typography variant="body1" align="center">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pulvinar, lectus nec sagittis varius, arcu est consequat dolor, vitae dapibus erat mi id velit. Suspendisse potenti. Duis volutpat, lacus eget lacinia vehicula, erat enim luctus urna, nec vestibulum elit erat nec purus.
+            Our vision is to grow the reach of our society and create more meaningful events for our MSS’ members.
             </Typography>
           </Grid>
         </Grid>
