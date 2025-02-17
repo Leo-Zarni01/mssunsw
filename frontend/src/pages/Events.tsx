@@ -1,4 +1,5 @@
 import EventCard from "../components/EventCard"; import Footer from "../components/Footer";
+import NavBar from "../components/NavComps/NavBar";
 import { Event, EVENTS } from "../components/eventDetailsTemplate";
 
 const upComingEvent: Event =
@@ -14,6 +15,7 @@ const upComingEvent: Event =
 const Events = () => {
   return (
     <>
+      <NavBar />
       <div className="min-h-screen flex flex-col justify-center items-center">
         <p className="text-3xl text-[#FFA700]">Upcoming Events</p>
         <div className="mt-12 flex justify-center items-center">

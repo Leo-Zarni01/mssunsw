@@ -14,321 +14,265 @@ interface CommitteeTeam {
     }[]
   }
 }
+const placeHolderUrl: string = "https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
 
-const committeeMembers: CommitteeTeam = {
+export const committeeMembers: CommitteeTeam = {
   2025: {
     executives: [
       {
         name: "Nile Yar",
         title: "President",
-        imageUrl: "",
+        imageUrl: placeHolderUrl,
       },
-
       {
         name: "Myat Thuzar Nwe",
         title: "Vice President",
-        imageUrl: "",
+        imageUrl: placeHolderUrl,
       },
-
       {
         name: "Arkar Myo",
         title: "Events Director",
-        imageUrl: "",
+        imageUrl: placeHolderUrl,
       },
-
       {
         name: "Myat Thadar Kyaw",
         title: "Events Director",
-        imageUrl: "",
+        imageUrl: placeHolderUrl,
       },
-
       {
         name: "Aye Chan San",
         title: "Events Director",
-        imageUrl: "",
+        imageUrl: placeHolderUrl,
       },
-
       {
         name: "Ada Daewi Aung",
         title: "Media and Publicity Director",
-        imageUrl: "",
+        imageUrl: placeHolderUrl,
       },
-
       {
         name: "Thet Htar Aung",
         title: "Secretary",
-        imageUrl: "",
+        imageUrl: placeHolderUrl,
       },
       {
         name: "Phyo Mon Su",
         title: "Arc Delegate",
-        imageUrl: "",
+        imageUrl: placeHolderUrl,
       }
     ],
-    subcommittees: [
-
-    ],
+    subcommittees: [],
   },
-
   2024: {
     executives: [
       {
         name: "Hein Sett Aung",
         title: "President",
-        imageUrl: "",
+        imageUrl: placeHolderUrl,
       },
-
       {
         name: "Nile Yar",
         title: "Vice President",
-        imageUrl: "",
+        imageUrl: placeHolderUrl,
       },
-
       {
         name: "Shun Le Yee Aung",
         title: "Secretary",
-        imageUrl: "",
+        imageUrl: placeHolderUrl,
       },
-
       {
         name: "Zayar Htut",
         title: "Treasurer",
-        imageUrl: "",
+        imageUrl: placeHolderUrl,
       },
-
       {
         name: "Myat Thuzar Nwe",
         title: "Arc Delegate",
-        imageUrl: "",
+        imageUrl: placeHolderUrl,
       },
-
       {
         name: "Kyi Sin Lin Htun",
         title: "Media and Publicity Director",
-        imageUrl: "",
+        imageUrl: placeHolderUrl,
       },
-
       {
         name: "May Lynn Let Aung",
         title: "Events Director",
-        imageUrl: "",
+        imageUrl: placeHolderUrl,
       },
-
     ],
     subcommittees: [
       {
         name: "Kaung Pyae Sone",
         title: "Events",
-        imageUrl: "",
+        imageUrl: placeHolderUrl,
       },
-
       {
         name: "Khant Zarni",
         title: "Events",
-        imageUrl: "",
+        imageUrl: placeHolderUrl,
       },
-
       {
         name: "Arkar Myo",
         title: "Events",
-        imageUrl: "",
+        imageUrl: placeHolderUrl,
       },
-
       {
         name: "Nyi Minn Aung",
         title: "Events",
-        imageUrl: "",
+        imageUrl: placeHolderUrl,
       },
       {
         name: "Myat Thadar Kyaw",
         title: "Events",
-        imageUrl: "",
+        imageUrl: placeHolderUrl,
       },
-
       {
         name: "Aye Chan San",
         title: "Events",
-        imageUrl: "",
+        imageUrl: placeHolderUrl,
       },
-
       {
         name: "Paing Paing",
         title: "Media & Publicity",
-        imageUrl: "",
+        imageUrl: placeHolderUrl,
       },
       {
         name: "Ada Daewi Aung",
         title: "Media & Publicity",
-        imageUrl: "",
+        imageUrl: placeHolderUrl,
       },
       {
         name: "Zin Wai Lwin Naing",
         title: "Media & Publicity",
-        imageUrl: "",
+        imageUrl: placeHolderUrl,
       },
       {
         name: "Chaw Su Thwe",
         title: "Media & Publicity",
-        imageUrl: "",
+        imageUrl: placeHolderUrl,
       },
     ],
   },
-
   2023: {
     executives: [
       {
         name: "Mya Thit Khet",
         title: "President",
-        imageUrl: "",
+        imageUrl: placeHolderUrl,
       },
-
       {
         name: "Jospeh Aung",
         title: "Vice President",
-        imageUrl: "",
+        imageUrl: placeHolderUrl,
       },
-
       {
         name: "Shun Le Yee Aung",
         title: "Secretary",
-        imageUrl: "",
+        imageUrl: placeHolderUrl,
       },
-
       {
         name: "Nile Yar",
         title: "Treasurer",
-        imageUrl: "",
+        imageUrl: placeHolderUrl,
       },
-
       {
         name: "Hsu Wati Htun",
         title: "Grievance and Welfare Director",
-        imageUrl: "",
+        imageUrl: placeHolderUrl,
       },
-
       {
         name: "Hein Sett Aung",
         title: "Arc Delegate",
-        imageUrl: "",
+        imageUrl: placeHolderUrl,
       },
-
       {
         name: "Eindray Aung",
         title: "Media and Publicity Director",
-        imageUrl: "",
+        imageUrl: placeHolderUrl,
       },
 
       {
         name: "Paing Paing",
         title: "Media and Publicity Director",
-        imageUrl: "",
+        imageUrl: placeHolderUrl,
       },
 
       {
         name: "Kyi Sin Lin Htun",
         title: "Media and Publicity Director",
-        imageUrl: "",
+        imageUrl: placeHolderUrl,
       },
 
       {
         name: "May Lynn Let Aung",
         title: "Events Director",
-        imageUrl: "",
+        imageUrl: placeHolderUrl,
       },
 
       {
         name: "Valerie Lee",
         title: "Events Director",
-        imageUrl: "",
+        imageUrl: placeHolderUrl,
       },
 
       {
         name: "Rose Susan",
         title: "Catering Director",
-        imageUrl: "",
+        imageUrl: placeHolderUrl,
       },
 
       {
         name: "John Htike",
         title: "Logistics Director",
-        imageUrl: "",
+        imageUrl: placeHolderUrl,
       },
       {
         name: "Aung Phyo San",
         title: "Logistics Director",
-        imageUrl: "",
+        imageUrl: placeHolderUrl,
       },
       {
         name: "Zayar Htut",
         title: "Logistics Director",
-        imageUrl: "",
+        imageUrl: placeHolderUrl,
       },
       {
         name: "Pyae Phyo Han",
         title: "Logistics Director",
-        imageUrl: "",
+        imageUrl: placeHolderUrl,
       },
 
     ],
-    subcommittees: [
-
-    ],
+    subcommittees: [],
   },
-
   2022: {
     executives: [
       {
         name: "Mya Thit Khet",
         title: "President",
-        imageUrl: "",
+        imageUrl: placeHolderUrl,
       },
-
       {
         name: "Patrick Min",
         title: "Vice President",
-        imageUrl: "",
+        imageUrl: placeHolderUrl,
       },
-
       {
         name: "Kyi Shinn Khin",
         title: "Secretary",
-        imageUrl: "",
+        imageUrl: placeHolderUrl,
       },
-
       {
         name: "Zu Zu Kyaw Lwin",
         title: "Treasurer",
-        imageUrl: "",
+        imageUrl: placeHolderUrl,
       },
-
       {
         name: "Joseph Aung Thu",
         title: "Arc Delegate",
-        imageUrl: "",
+        imageUrl: placeHolderUrl,
       },
-
-      {
-        name: "Yamone Khin",
-        title: "Events Director",
-        imageUrl: "",
-      },
-
-      {
-        name: "Khine Zarr Hein",
-        title: "Publicity Director",
-        imageUrl: "",
-      },
-
-      {
-        name: "Grace San",
-        title: "Media Director",
-        imageUrl: "",
-      },
-
     ],
-    subcommittees: [
-
-    ],
+    subcommittees: [],
   },
-
-}
+};

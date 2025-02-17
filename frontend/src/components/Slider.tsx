@@ -25,11 +25,21 @@ const CustomSliderStyles = {
   },
 };
 
-export const SliderComponent = () => {
-  const years = [2025, 2024, 2023, 2022, 2021, 2020, 2019, 2018] // most recent
+interface SliderProps {
+  year: number;
+  onYearChange: (newYear: number) => void;
+}
+
+export const SliderComponent: React.FC<SliderProps> = ({ year, onYearChange }) => {
+  const years = [2025, 2024, 2023, 2022] // most recent
+  const handleSliderChange = (_event: Event, value: number | number[]) => {
+    if (typeof value === "number") {
+      onYearChange(value)
+    }
+  }
   return (
     <>
-      <Box sx={{ width: 1000 }}>
+      <Box sx={{ width: 500 }}>
         <Slider
           aria-label="Always Visible"
           defaultValue={2025}
@@ -38,8 +48,10 @@ export const SliderComponent = () => {
           shiftStep={30}
           step={1}
           marks={years.map(year => ({ value: year, label: `${year}` }))}
-          min={2018}
+          min={2022}
           max={2025}
+          value={year}
+          onChange={handleSliderChange}
           sx={CustomSliderStyles}
         />
       </Box>

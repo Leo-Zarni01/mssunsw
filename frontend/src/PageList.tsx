@@ -13,7 +13,7 @@ const PageList = () => {
       <Route path='/ourstory' element={<OurStory />} />
       <Route path='/events/1' element={<UpcomingEventDetails />} />
       <Route path='/events' element={<Events />} />
-      <Route path='/teams' element={<Teams />} />
+      <Route path='/team' element={<Teams />} />
       <Route path='/getinvolved' element={<GetInvolved />} />
     </Routes>
   )
