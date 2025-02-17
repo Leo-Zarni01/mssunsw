@@ -16,6 +16,9 @@ const Teams = () => {
     <>
       <NavBar />
       <div className="flex items-center justify-center">
+        <p className="text-3xl text-[#FFA700]">Meet our Team</p>
+      </div>
+      <div className="flex items-center justify-center mt-14">
         <SliderComponent year={year} onYearChange={handleYearChange} />
       </div>
       <div className="font-poppins">
