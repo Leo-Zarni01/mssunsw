@@ -13,10 +13,14 @@ const CustomSliderStyles = {
     color: "#FFA700"
   },
   '& .MuiSlider-rail': {
-    color: "#acc4e4"
+    color: "#FA5043"
   },
-  '& .MuiSlider-active': {
-    color: "#f5e278"
+
+  '& .MuiSlider-mark': {
+    color: "#FFA700",
+    width: 10,
+    height: 10,
+    borderRadius: "50%"
   },
 
   '& .MuiSlider-markLabel': {

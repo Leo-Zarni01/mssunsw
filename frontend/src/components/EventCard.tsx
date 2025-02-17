@@ -6,7 +6,7 @@ interface EventProps {
 
 const EventCard: React.FC<EventProps> = ({ event }) => {
   return (
-    <div className="w-80 h-full border border-orange-100 rounded-2xl shadow-md overflow-hidden bg-white">
+    <div className="w-80 h-full border border-orange-100 rounded-2xl shadow-md overflow-hidden bg-white font-poppins">
       <div className="relative">
         <img
           src="https://via.placeholder.com/400x200"

@@ -161,7 +161,7 @@ export const committeeMembers: CommitteeTeam = {
         imageUrl: placeHolderUrl,
       },
       {
-        name: "Jospeh Aung",
+        name: "Joseph Aung Thu",
         title: "Vice President",
         imageUrl: placeHolderUrl,
       },
