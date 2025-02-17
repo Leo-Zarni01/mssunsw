@@ -23,7 +23,7 @@ const HP_TS = () => {
         <Grid
         sx={{
             // backgroundColor: "orange",
-            height: "40rem",
+            height: "35rem",
             // opacity: "0.3"
         }}
         >

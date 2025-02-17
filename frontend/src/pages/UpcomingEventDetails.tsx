@@ -1,10 +1,10 @@
-import { CardMedia, Grid2 as Grid } from '@mui/material';
-import Box from '@mui/material/Box';
+import { CardMedia, Grid2 as Grid, Box } from '@mui/material';
 import '../App.css';
 import thadingyut from '../assets/images/img-thadingyut.jpg';
 import AboutTheEvent from '../components/AboutTheEvent';
 import EventRegistrationForm from '../components/EventRegistrationForm';
 import Footer from '../components/Footer';
+import EventDateTimeLoc from '../components/EventDateTimeLoc';
 
 const styleTitle = {
   width: '100vw',
@@ -22,7 +22,7 @@ const UpcomingEventDetails = () => {
     // event poster or image
     // About the event  // component
     // event details    // component
-    // register form    
+    // registration form    
 
     <>
       {/* navigation */}
@@ -44,6 +44,9 @@ const UpcomingEventDetails = () => {
         <Grid size={6}>
           <Box sx={{ marginTop: '4rem' }}></Box>
           <AboutTheEvent />
+
+          <Box sx={{ marginTop: '4rem' }}></Box>
+          <EventDateTimeLoc />
         </Grid>
         <Grid size={6}>
           <Box sx={{ marginTop: '2rem' }}></Box>

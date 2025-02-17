@@ -13,8 +13,7 @@ const EventRegistrationForm = () => {
   return (
     <>
       <Card variant='outlined' sx={{ borderRadius: '16px', boxShadow: 3, margin: 'auto' }} >
-
-        <Typography sx={{ color: '#FFA700', fontWeight: 'bold', display: 'flex', alignItems: 'center', justifyContent: 'center', marginTop: '1.5rem' }}>
+        <Typography sx={{ color: '#FFA700', fontWeight: 'bold', display: 'flex', alignItems: 'center', justifyContent: 'center', marginTop: '1.5rem'}}>
           Event Registration Form
         </Typography>
 

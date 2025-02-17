@@ -1,1 +1,10 @@
+.meetExecSwiper .swiper-pagination-bullet-active {
+  background-color: #EE6055 !important;
+  opacity: 1;
+}
+
+.eventsSwiper .swiper-pagination-bullet-active {
+  background-color: #FFA700 !important;
+  opacity: 1;
+}
 
