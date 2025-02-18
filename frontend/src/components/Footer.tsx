@@ -3,8 +3,15 @@ import { FaInstagram } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa";
 import Logo from "../assets/images/Logo.png";
 import { Link } from "react-router";
+import { useCallback } from "react";
 
 const Footer = () => {
+  const scrollToTop = useCallback(() => {
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 2);
+  }, [])
+
   return (
     <footer className="font-poppins bg-black text-white py-10 px-4 md:px-16">
       <div className="max-w-5xl mx-auto">
@@ -12,10 +19,10 @@ const Footer = () => {
           {/* Left Column */}
           <div className="flex flex-col items-center md:items-start">
             <nav className="flex flex-col space-y-3">
-              <Link to="/about" className="text-lg text-yellow-500 hover:underline" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}> About Us</Link>
-              <Link to="/events" className="text-lg text-yellow-500 hover:underline" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}> Events</Link>
-              <Link to="/team" className="text-lg text-yellow-500 hover:underline" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}> Our Team</Link>
-              <Link to="/getinvolved" className="text-lg text-yellow-500 hover:underline" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}> Join Us</Link>
+              <Link to="/about" className="text-lg text-yellow-500 hover:underline" onClick={scrollToTop}> About Us</Link>
+              <Link to="/events" className="text-lg text-yellow-500 hover:underline" onClick={scrollToTop}> Events</Link>
+              <Link to="/team" className="text-lg text-yellow-500 hover:underline" onClick={scrollToTop}> Our Team</Link>
+              <Link to="/getinvolved" className="text-lg text-yellow-500 hover:underline" onClick={scrollToTop}> Join Us</Link>
             </nav>
           </div>
 

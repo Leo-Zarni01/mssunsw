@@ -5,7 +5,7 @@ import { committeeMembers } from "../TeamMembers";
 import Footer from "../components/Footer";
 
 const Teams = () => {
-  const [year, setYear] = useState<number>(2024);
+  const [year, setYear] = useState<number>(2025);
   const currentYearData = committeeMembers[year];
 
   const handleYearChange = (newYear: number) => {
