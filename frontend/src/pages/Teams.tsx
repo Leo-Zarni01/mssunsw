@@ -1,13 +1,13 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import NavBar from "../components/NavComps/NavBar";
 import { SliderComponent } from "../components/Slider";
 import { committeeMembers } from "../TeamMembers";
 import Footer from "../components/Footer";
+import { useLocation } from "react-router";
 
 const Teams = () => {
   const [year, setYear] = useState<number>(2025);
   const currentYearData = committeeMembers[year];
-
   const handleYearChange = (newYear: number) => {
     setYear(newYear);
   };

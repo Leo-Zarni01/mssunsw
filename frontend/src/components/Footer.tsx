@@ -7,13 +7,10 @@ import { useCallback } from "react";
 
 const Footer = () => {
   const scrollToTop = useCallback(() => {
-    setTimeout(() => {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-      });
-    }, 2);
-  }, [])
+    window.scrollTo({
+      top: 0,
+    });
+  }, []);
 
   return (
     <footer className="font-poppins bg-black text-white py-10 px-4 md:px-16">
