@@ -22,10 +22,10 @@ const Footer = () => {
           {/* Left Column */}
           <div className="flex flex-col items-center md:items-start">
             <nav className="flex flex-col space-y-3">
-              <Link to="/about" className="text-lg text-yellow-500 hover:underline" onClick={scrollToTop}> About Us</Link>
+              <Link to="/our-story" className="text-lg text-yellow-500 hover:underline" onClick={scrollToTop}> Our Story</Link>
               <Link to="/events" className="text-lg text-yellow-500 hover:underline" onClick={scrollToTop}> Events</Link>
               <Link to="/team" className="text-lg text-yellow-500 hover:underline" onClick={scrollToTop}> Our Team</Link>
-              <Link to="/getinvolved" className="text-lg text-yellow-500 hover:underline" onClick={scrollToTop}> Join Us</Link>
+              <Link to="/get-involved" className="text-lg text-yellow-500 hover:underline" onClick={scrollToTop}> Join Us</Link>
             </nav>
           </div>
 
