@@ -19,25 +19,25 @@ const GI_Bft = () => {
                     my: {xs: "1rem", md: "2rem"} 
                 }}
                 >
-                    <Typography variant="h5" sx={{color: "red", my: "1rem"}}>Member benefits</Typography>
+                    <Typography variant="h5" sx={{color: "#EE6055", my: "1rem"}}>Member benefits</Typography>
                     <List sx={{textAlign: "left"}}>
                         <ListItem>
                             <ListItemIcon>
-                                <CircleIcon sx={{ color: "orange", fontSize: 20 }}/>
+                                <CircleIcon sx={{ color: "#FFA700", fontSize: 20 }}/>
                             </ListItemIcon>
                             <ListItemText primary="Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
                         </ListItem>
                         <ListItem>
                             <ListItemIcon>
-                                <CircleIcon sx={{ color: "green", fontSize: 20 }}/>
+                                <CircleIcon sx={{ color: "#8BB174", fontSize: 20 }}/>
                             </ListItemIcon>
                             <ListItemText primary="Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
                         </ListItem>
                         <ListItem>
                             <ListItemIcon>
-                                <CircleIcon sx={{ color: "red", fontSize: 20 }}/>
+                                <CircleIcon sx={{ color: "#EE6055", fontSize: 20 }}/>
                             </ListItemIcon>
                             <ListItemText primary="Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
@@ -56,25 +56,25 @@ const GI_Bft = () => {
                     my: {xs: "1rem", md: "2rem"}  
                 }}
                 >
-                    <Typography variant="h5" sx={{color: "green", my: "1rem"}}>Team benefits</Typography>
+                    <Typography variant="h5" sx={{color: "#8BB174", my: "1rem"}}>Team benefits</Typography>
                     <List sx={{textAlign: "left"}}>
                         <ListItem>
                             <ListItemIcon>
-                                <CircleIcon sx={{ color: "orange", fontSize: 20 }}/>
+                                <CircleIcon sx={{ color: "#FFA700", fontSize: 20 }}/>
                             </ListItemIcon>
                             <ListItemText primary="Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
                         </ListItem>
                         <ListItem>
                             <ListItemIcon>
-                                <CircleIcon sx={{ color: "green", fontSize: 20 }}/>
+                                <CircleIcon sx={{ color: "#8BB174", fontSize: 20 }}/>
                             </ListItemIcon>
                             <ListItemText primary="Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
                         </ListItem>
                         <ListItem>
                             <ListItemIcon>
-                                <CircleIcon sx={{ color: "red", fontSize: 20 }}/>
+                                <CircleIcon sx={{ color: "#EE6055", fontSize: 20 }}/>
                             </ListItemIcon>
                             <ListItemText primary="Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />

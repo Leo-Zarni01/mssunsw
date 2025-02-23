@@ -6,7 +6,7 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { Box } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
-import { useState, useEffect } from "react";
+import { useState, useEffect, FC } from "react";
 import { FaFacebook } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa";
@@ -25,8 +25,11 @@ const navItems = [
     { label: "Get Involved", path: "/getinvolved" },
 ];
 
+type Args = {
+    isDark: boolean,
+};
 
-const NavBarSml = () => {
+const NavBarSml:FC<Args> = ({isDark}) => {
 
     const navigate = useNavigate();
     const [isOpen, setIsOpen] = useState(false);
@@ -53,29 +56,37 @@ const NavBarSml = () => {
             justifyContent: "space-between",
             alignItems: "center",
             px: "1rem",
-            py: "1rem"
+            py: "0.5rem"
         }}
         >
             <Stack direction="row" >
-                <MenuIcon fontSize="large" sx={{mt: "1rem", mr: "0.5rem"}}
+                <MenuIcon
+                className="mt-3.5 sm:mt-6 md:mt-6 mr-2"
+                sx={{
+                //     mt: {xs: "0.7rem", sm: "1.5rem", md: "1rem"}, 
+                //     mr: "0.5rem",
+                    fontSize: {xs: "1.7rem", sm: "2.2rem"}
+                }}
                 onClick={() => setIsOpen(true)}
                 ></MenuIcon>
                 <img 
                     src={logo}
                     alt="MSS Logo"
-                    style={{width: "4rem", height: "4rem"}}
+                    className="w-12 sm:w-18 h-12 sm:h-18"
+                    // style={{width: "4rem", height: "4rem"}}
                 />
             </Stack>
             
             <Stack direction="row" spacing={2} >
                 <a href="https://www.facebook.com/mssunsw/" target="_blank">
-                  <FaFacebook size={30} />
+                  {isDark ? <FaFacebook className="text-white size-6 sm:size-8 md:size-8"/> : <FaFacebook className="size-6 sm:size-8 md:size-8"/>}
+                  
                 </a>
                 <a href="https://www.instagram.com/mssunsw/" target="_blank">
-                  <FaInstagram size={33} />
+                  {isDark ? <FaInstagram className="text-white size-6 sm:size-9 md:size-9"/> : <FaInstagram className="size-6 sm:size-9 md:size-9"/>}
                 </a>
                 <a href="https://www.tiktok.com/@mss.unsw" target="_blank">
-                  <FaTiktok size={28} />
+                  {isDark ? <FaTiktok className="text-white size-6 sm:size-8 md:size-8"/> : <FaTiktok className="size-6 sm:size-8 md:size-8"/>}
                 </a>
             </Stack>
         </Stack>
@@ -119,13 +130,13 @@ const NavBarSml = () => {
                                 gutterBottom
                                 onClick={() => navigate(item.path)}
                                 sx={{ 
-                                    color: "orange",
+                                    color: "#FFA700",
                                     cursor: "pointer",
                                     borderBottom: "2px solid black",
                                     py: "1rem",
                                     transition: "color 0.3s ease", // Smooth color transition
                                     "&:hover": {
-                                    color: "black", // Change color on hover
+                                    color: isDark? "white" : "black", // Change color on hover
                                     }
                                 }}
                             >

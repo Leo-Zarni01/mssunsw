@@ -4,6 +4,8 @@ import { useState } from "react";
 
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Carousel from './Carousel';
+import PastCarousel from './PastCarousel';
+
 
 
 const theme = createTheme({
@@ -26,30 +28,33 @@ const HP_TS = () => {
         }}
         >
             <Grid size={12} textAlign="center" sx={{paddingTop: "2rem"}}>
-                <Typography variant="h6" onClick={() => setEventState("past")}
+                <Typography onClick={() => setEventState("past")}
                 sx={{
                     display: "inline",
                     color: eventState == "past" ? "green" : "black",
                     cursor: "pointer",
                     borderBottom: eventState == "past" ? "2px solid green" : "none",
-                    opacity: "1"
+                    opacity: "1",
+                    fontSize: {xs: "1.2rem", sm: "1.3rem", md:"1.5rem"}
                 }}
                 >
                     Past Events
                 </Typography>
-                <Typography variant="h6" onClick={() => setEventState("upcoming")}
+                <Typography onClick={() => setEventState("upcoming")}
                 sx={{
                     display: "inline",
                     marginLeft: "4rem",
                     cursor: "pointer",
                     color: eventState == "upcoming" ? "green" : "black",
-                    borderBottom: eventState == "upcoming" ? "2px solid green" : "none"
+                    borderBottom: eventState == "upcoming" ? "2px solid green" : "none",
+                    fontSize: {xs: "1.2rem", sm: "1.3rem", md:"1.5rem"}
                 }}
                 >
                     Upcoming Events
                 </Typography>
             </Grid>
-            <Carousel />
+            {/* <Carousel /> */}
+            {eventState === "upcoming" ? <Carousel /> : <PastCarousel />}
         </Grid>
         </ThemeProvider>
     )

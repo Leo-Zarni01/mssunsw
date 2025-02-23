@@ -1,7 +1,9 @@
 // import React, { useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-import logo from '../../assets/MSS_Logo.webp'
+import { Event } from "../components/eventDetailsTemplate";
+import EventCard from "../EventCard";
+// import logo from '../../assets/MSS_Logo.webp'
 
 
 // Import Swiper styles
@@ -14,6 +16,16 @@ import './styles.css';
 
 // import required modules
 import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
+
+const upComingEvent: Event =
+{
+  id: 1,
+  name: "Fresher Welcome",
+  date: "TBD",
+  time: "TBD",
+  location: "TBD",
+  imageUrl: "TBD",
+}
 
 const Carousel = () => {
   return (
@@ -35,7 +47,13 @@ const Carousel = () => {
         modules={[EffectCoverflow, Pagination, Navigation]}
         className="eventsSwiper"
       >
-        <SwiperSlide>
+        <SwiperSlide style={{ width: "300px", height: "450px"  }}>
+          <EventCard event={upComingEvent} />
+        </SwiperSlide>
+        <SwiperSlide style={{ width: "300px", height: "450px"  }}>
+          <EventCard event={upComingEvent} />
+        </SwiperSlide>
+        {/* <SwiperSlide>
           <img src={logo} />
         </SwiperSlide>
         <SwiperSlide>
@@ -52,13 +70,7 @@ const Carousel = () => {
         </SwiperSlide>
         <SwiperSlide>
           <img src={logo} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={logo} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={logo} />
-        </SwiperSlide>
+        </SwiperSlide> */}
       </Swiper>
     </>
   );

@@ -9,7 +9,7 @@ const HomePage = () => {
 
     return (
         <div>
-            <NavBar />
+            <NavBar isDark={false}/>
             <HP_SS />
             <HP_TS />
             <MeetTheExecutives />

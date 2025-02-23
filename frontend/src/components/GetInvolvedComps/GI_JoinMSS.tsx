@@ -24,9 +24,10 @@ const GI_JoinMSS = () => {
                 pariatur. Excepteur sint deserunt mollit anim id est laborum.      
             </Typography>
             <Button variant="contained" color="primary" size="medium"
+            onClick={() => window.open("https://tr.ee/57QyR10W54", "_blank")}
             sx={{
                 backgroundColor: "black",
-                color: "orange",
+                color: "#FFA700",
                 marginTop: "0.6rem",
                 px: "1.5rem",
                 py: "0.7rem",
