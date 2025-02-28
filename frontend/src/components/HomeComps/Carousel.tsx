@@ -33,7 +33,7 @@ const Carousel = () => {
       <Swiper
         effect={'coverflow'}
         grabCursor={true}
-        centeredSlides={true}
+        centeredSlides={false}
         navigation={true}
         slidesPerView={'auto'}
         coverflowEffect={{
@@ -45,7 +45,7 @@ const Carousel = () => {
         }}
         pagination={true}
         modules={[EffectCoverflow, Pagination, Navigation]}
-        className="mySwiper"
+        className="eventsSwiper"
       >
         <SwiperSlide style={{ width: "300px", height: "450px"  }}>
           <EventCard event={upComingEvent} />
