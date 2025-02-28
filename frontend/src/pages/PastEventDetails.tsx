@@ -14,7 +14,7 @@ const PastEventDetails = () => {
   return (
     <>
       <Background>
-        <NavBar />
+        <NavBar isDark={false} />
 
         <PastEventDetailsWovenPhotos />
 

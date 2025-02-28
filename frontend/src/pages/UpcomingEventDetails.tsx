@@ -5,6 +5,7 @@ import AboutTheEvent from '../components/AboutTheEvent';
 import EventRegistrationForm from '../components/EventRegistrationForm';
 import Footer from '../components/Footer';
 import EventDateTimeLoc from '../components/EventDateTimeLoc';
+import NavBar from '../components/NavComps/NavBar';
 
 const styleTitle = {
   width: '100vw',
@@ -17,21 +18,10 @@ const styleTitle = {
 }
 
 const UpcomingEventDetails = () => {
-  return (
-    // event name {title}
-    // event poster or image
-    // About the event  // component
-    // event details    // component
-    // registration form    
-
+  return (   
     <>
-      {/* navigation */}
-      <Box sx={{ margin: '1rem' }}> Nav Bar </Box>
-
-      {/* title */}
+      <NavBar isDark={false} />
       <Box sx={styleTitle}> Event Theme: Fresher Welcome </Box>
-
-      {/* event poster */}
       <CardMedia
         component="img"
         height="400"
@@ -39,22 +29,21 @@ const UpcomingEventDetails = () => {
         image={thadingyut}
       />
 
-      {/* About the event */}
-      <Grid container spacing={10} sx={{ padding: '0 3rem 0 3rem' }}>
-        <Grid size={6}>
-          <Box sx={{ marginTop: '4rem' }}></Box>
-          <AboutTheEvent />
+    <Grid container spacing={{xs: 0, sm: 10}} sx={{ padding: '0 3rem 1rem 3rem' }}>
+      <Grid size={{xs: 12, sm: 6}}>
+        <Box sx={{ marginTop: '4rem' }}></Box>
+        <AboutTheEvent />
 
-          <Box sx={{ marginTop: '4rem' }}></Box>
-          <EventDateTimeLoc />
-        </Grid>
-        <Grid size={6}>
-          <Box sx={{ marginTop: '2rem' }}></Box>
-          <EventRegistrationForm />
-        </Grid>
+        <Box sx={{ marginTop: '4rem' }}></Box>
+        <EventDateTimeLoc />
       </Grid>
+      
+      <Grid size={{xs: 12, sm: 6}}>
+        <Box sx={{ marginTop: '2rem' }}></Box>
+        <EventRegistrationForm />
+      </Grid>
+    </Grid>
 
-      {/* footer */}
       <Footer />
     </>
   );
