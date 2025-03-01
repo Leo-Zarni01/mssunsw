@@ -80,7 +80,7 @@ const OurStory = () => {
       </Box>
 
       <Typography variant="body1" align="center" padding={5}>
-      The Myanmar Students' Society is a university-based cultural organization dedicated to fostering a strong sense of community and vibrant environment among Burmese students. It serves as a home away from home, offering cultural events, social gatherings, and support networks to celebrate Myanmar’s culture.
+      The Myanmar Students' Society is more than just a university-based cultural organization. We are dedicated to fostering a strong sense of community and vibrant environment among Burmese students. It serves as a home away from home, offering cultural events, social gatherings, and support networks to celebrate Myanmar’s culture.
       </Typography>
 
       <Box
@@ -100,7 +100,7 @@ const OurStory = () => {
               Vision
             </Typography>
             <Typography variant="body1" align="center">
-            Our vision is to grow the reach of our society and create more meaningful events for our MSS’ members.
+            Our vision is to expand our society’s reach and create more meaningful, engaging events that enrich the experience of our MSS members.
             </Typography>
           </Grid>
         </Grid>
@@ -113,7 +113,7 @@ const OurStory = () => {
       <Timeline position="alternate">
         <Timelinecard
           time="2012"
-          activity="MSS born"
+          activity="MSS’s Origin"
           details="Ko Thu Ya founded MSS"
           dotcolor="#ffd700"
         />
@@ -126,7 +126,7 @@ const OurStory = () => {
         <Timelinecard
           time="2022"
           activity="Won 2022 Club Cultural Award"
-          details="MSS won 2022 Club Cultural Award for promoting artistic or ethnocultural expression within the UNSW community"
+          details="MSS won the 2022 Club Cultural Award for its outstanding efforts in promoting artistic and ethnocultural expression, enriching the vibrant UNSW community!"
           dotcolor="#ee6055"
         />
         <Timelinecard
@@ -137,9 +137,9 @@ const OurStory = () => {
         />
         <Timelinecard
           time="2024 onwards"
-          activity="More Events for the fun"
+          activity="More Exciting Events Ahead!"
           details="Stay Tuned to connect with fellow Burmese students"
-          dotcolor="#ffd700"
+          dotcolor="#8bb174"
         />
       </Timeline>
       <Footer />
