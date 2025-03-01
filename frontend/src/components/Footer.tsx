@@ -59,7 +59,7 @@ const Footer = () => {
             <img src={Logo} alt="MSSUNSW Logo" className="w-24 h-auto" />
           </div>
           <p className="text-yellow-500 text-sm">Copyright © MSSUNSW 2025</p>
-          <p className="text-yellow-500 text-sm font">Myanmar Students Society @ UNSW</p>
+          <p className="text-yellow-500 text-sm font">Myanmar Students' Society @ UNSW</p>
         </div>
       </div>
     </footer >
