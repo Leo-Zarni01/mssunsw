@@ -19,10 +19,10 @@ const themenav = createTheme({
 
 const navItems = [
     { label: "Home", path: "/" },
-    { label: "About Us", path: "/aboutus" },
+    { label: "About Us", path: "/about-us" },
     { label: "Events", path: "/events" },
     { label: "Our Team", path: "/team" },
-    { label: "Get Involved", path: "/getinvolved" },
+    { label: "Get Involved", path: "/get-involved" },
 ];
 
 type Args = {
