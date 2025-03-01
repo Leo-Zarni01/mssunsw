@@ -4,18 +4,8 @@ import EventCard from "../EventCard";
 
 import './styles.css';
 
-// import required modules
 import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
 
-// const upComingEvent: Event =
-// {
-//   id: 1,
-//   name: "Fresher Welcome",
-//   date: "TBD",
-//   time: "TBD",
-//   location: "TBD",
-//   imageUrl: "TBD",
-// }
 
 const PastCarousel = () => {
   return (
@@ -38,32 +28,13 @@ const PastCarousel = () => {
         modules={[EffectCoverflow, Pagination, Navigation]}
         className="mySwiper"
       >
-        {/* <SwiperSlide style={{ width: "300px", height: "450px"  }}>
-          <EventCard event={upComingEvent} />
-        </SwiperSlide> */}
+        
         {EVENTS.slice(0, 3).map((event: Event) => (  // Always ensures six cards are displayed
             <SwiperSlide style={{ width: "300px", height: "470px"  }}>
                 <EventCard key={event.id} event={event} type='past' />
             </SwiperSlide>
         ))}
-        {/* <SwiperSlide>
-          <img src={logo} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={logo} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={logo} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={logo} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={logo} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={logo} />
-        </SwiperSlide> */}
+        
       </Swiper>
     </>
   );

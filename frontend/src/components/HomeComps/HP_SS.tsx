@@ -30,9 +30,9 @@ const HP_SS = () => {
                 setTimeout(() => {
                 setDisplayedText("");
                 setIndex(0);
-                }, 300); // Pause before restarting
+                }, 300); 
             }
-        }, 200); // Adjust typing speed
+        }, 200); 
     
         return () => clearInterval(interval);
     }, [index]);
@@ -46,7 +46,6 @@ const HP_SS = () => {
                     sx={{
                         width: '100%', 
                         height: { xs: "22rem", sm: "30rem", md: "46rem" }, 
-                        // border: '1px solid black', 
                         opacity: 0.8,
                         backgroundImage: `url(${com_photo})`,
                         backgroundSize: 'cover',
@@ -58,21 +57,14 @@ const HP_SS = () => {
                             backgroundColor: 'rgba(0, 0, 0, 0.5)',
                         }}></Box>
                     </Box>
-                    {/* <img src={com_photo} alt="Image" 
-                    // className="h-90 sm:h-110 md:h-150" 
-                    style={{
-                        width: '100%', 
-                    //     // height: { xs: "20rem", sm: "30rem", md: "30rem" }, 
-                    //     border: '1px solid black', 
-                    //     opacity: 0.7 
-                        }} 
-                    /> */}
                     <Box
                         position="absolute"
                         top={{xs: "15%", sm: "17%", md: "30%"}}
                         left="50%"
+                        textAlign="center"
                         style={{
                         transform: 'translate(-50%, -50%)',
+                        width: "100%"
                         }}
                     >
                         <motion.div
@@ -91,18 +83,16 @@ const HP_SS = () => {
                     </Box>
                     <Box
                         position="absolute"
-                        top={{xs: "23%", sm:"28%", md: "43%"}}
+                        top={{xs: "23%", sm:"28%", md: "45%"}}
                         left="50%"
                         style={{
                         transform: 'translate(-50%, -50%)',
                         }}
                     >
                         <Typography
-                        // variant="h4"
                         color="#FFA700"
                         sx={{
-                            // fontSize: {xs: "3rem", sm: "2rem", md: "3rem"}
-                            fontSize: {xs: "1.3rem", sm:"1.8rem", md: "2.5rem"}
+                            fontSize: {xs: "1.3rem", sm:"1.8rem", md: "3.5rem"}
                         }}
                         >
                         UNSW
@@ -110,18 +100,18 @@ const HP_SS = () => {
                     </Box>
                     <Box
                         position="absolute"
-                        top={{xs: "28%", sm: "35%", md: "50%"}}
+                        top={{xs: "30%", sm: "35%", md: "55%"}}
                         left="50%"
                         textAlign="center"
                         style={{
                         transform: 'translate(-50%, -50%)',
+                        width: "100%"
                         }}
                     >
                         <Typography
-                        // variant="h4"
                         color="#FFA700"
                         sx={{
-                            fontSize: {xs: "1.3rem", sm:"1.8rem", md: "2.5rem"}
+                            fontSize: {xs: "1.3rem", sm:"1.8rem", md: "3.5rem"}
                         }}
                         >
                         Myanmar Student Society
@@ -130,7 +120,6 @@ const HP_SS = () => {
             </Grid>
             <Grid size={{xs: 0.5, sm: 1.5, md: 1.5}}></Grid>
             <Grid size={{xs: 5, sm: 3, md: 3}} container 
-            // sx={{ height: '40vh' }} 
             alignItems="center" 
             justifyContent="center" 
             >
@@ -139,13 +128,11 @@ const HP_SS = () => {
                 size={{xs: 12}}
                 >
                 <Typography sx={{fontSize: {xs: "0.8rem", sm: "1rem", md: "1.3rem"}}}
-                // variant="h6"
                  gutterBottom>
                     The Myanmar Student Society (MSS) connects Myanmar students through cultural events, support, and networking. Join our community!
                 </Typography>
                 <Button variant="contained" color="primary" 
                 onClick={() => navigate("/about-us")}
-                // size="medium"
                 sx={{
                     fontSize: {xs: "0.8rem", sm: "1rem", md: "1.2rem"},
                     backgroundColor: "black",
@@ -175,10 +162,8 @@ const HP_SS = () => {
                     <Box sx={{
                         width: '100%',
                         height: '100%',
-                        // backgroundColor: 'rgba(0, 0, 0, 0.5)',
                     }}></Box>
                 </Box>
-                {/* <img src={logo} alt="Image" style={{ width: '100%', height: "25rem", border: '1px solid black' }} /> */}
             </Grid>   
         </Grid>
         </ThemeProvider>
