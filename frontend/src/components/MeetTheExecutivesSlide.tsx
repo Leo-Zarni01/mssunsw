@@ -9,7 +9,7 @@ const MeetTheExecutivesSlide: React.FC<{executive: ExecProps}> = ({ executive })
         container
         columnSpacing={10}
         sx={{
-          paddingTop: "1rem",
+          padding: "1rem",
           display: "flex" ,
           justifyContent: "center",
           alignItems: "center",
@@ -20,7 +20,7 @@ const MeetTheExecutivesSlide: React.FC<{executive: ExecProps}> = ({ executive })
 
           <Grid
             display="flex"
-            justifyContent="center"
+            justifyContent="top"
             flexDirection='column'
             alignItems="center"
           >

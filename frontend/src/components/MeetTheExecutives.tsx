@@ -30,6 +30,10 @@ const MeetTheExecutives = () => {
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
         className="meetExecSwiper"
+        style={{
+          display: 'flex',       // Makes the swiper container a flex container
+          alignItems: 'center',     // Vertically centers the slides
+        }}
       >
         {committeeMembers[2025].executives.map((item) => (
           <SwiperSlide style={{ height: '100%' }}> <MeetTheExecutivesSlide executive={item} /> </SwiperSlide>
