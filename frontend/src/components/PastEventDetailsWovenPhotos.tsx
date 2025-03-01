@@ -47,6 +47,7 @@ const images = [
   img3815,
 ]
 
+
 const PastEventDetailsWovenPhotos = () => {
   // const theme = useTheme();
   // const isMobile = useMediaQuery(theme.breakpoints.down('sm'));

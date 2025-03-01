@@ -22,8 +22,8 @@ const HP_TS = () => {
         <ThemeProvider theme={theme}>
         <Grid
         sx={{
-            // backgroundColor: "orange",
-            height: "43rem",
+            backgroundColor: "#FCF6D7",
+            height: "40rem",
             // opacity: "0.3"
         }}
         >
