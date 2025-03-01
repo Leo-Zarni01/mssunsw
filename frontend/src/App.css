@@ -1,4 +1,5 @@
 @import 'swiper/css/bundle';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 .meetExecSwiper .swiper-pagination-bullet-active {
   background-color: #EE6055 !important;
@@ -18,7 +19,7 @@ body {
 
 body {
   background: #fff;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 14px;
   color: #000;
   margin: 0;
