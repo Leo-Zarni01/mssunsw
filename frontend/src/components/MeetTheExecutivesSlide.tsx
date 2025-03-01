@@ -1,8 +1,8 @@
 import Grid from '@mui/material/Grid2';
 import { Typography } from '@mui/material';
-import { Executive } from './MeetTheExecutivesTemplate';
+import { ExecProps } from '../TeamMembers';
 
-const MeetTheExecutivesSlide: React.FC<{executive: Executive}> = ({ executive }) => {
+const MeetTheExecutivesSlide: React.FC<{executive: ExecProps}> = ({ executive }) => {
   return (
     <>
       <Grid
@@ -15,7 +15,7 @@ const MeetTheExecutivesSlide: React.FC<{executive: Executive}> = ({ executive })
           alignItems: "center",
           }}>          
           <Grid>
-            <img src={executive.imageUrl} style={{ width: '300px', maxHeight: '250px', borderRadius: '10%', marginBottom: '2rem' }} />
+            <img src={executive.imageUrl} style={{ width: '280px', maxHeight: '280px', borderRadius: '10%', marginBottom: '2rem' }} />
           </Grid>
 
           <Grid
@@ -33,7 +33,7 @@ const MeetTheExecutivesSlide: React.FC<{executive: Executive}> = ({ executive })
             </Typography>
 
             <Typography color='text.secondary'>
-              {executive.position}
+              {executive.title}
             </Typography>
           </Grid>
       </Grid>
