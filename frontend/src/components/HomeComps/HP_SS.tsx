@@ -15,15 +15,16 @@ const theme = createTheme({
 
 
 const HP_SS = () => {
-    const text = "မင်္ဂလာပါ..."
+    const text = "မ င်္ဂ လာ ပါ . . ."
+    const words = text.split(" ");
     const [displayedText, setDisplayedText] = useState("");
     const [index, setIndex] = useState(0);
     const navigate = useNavigate();
 
     useEffect(() => {
         const interval = setInterval(() => {
-            if (index < text.length) {
-                setDisplayedText((prev) => prev + text[index]);
+            if (index < words.length) {
+                setDisplayedText((prev) => (prev ? prev + " " + words[index] : words[index]));
                 setIndex((prev) => prev + 1);
             } else {
                 setTimeout(() => {
