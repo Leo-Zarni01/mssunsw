@@ -48,7 +48,7 @@ const PastCarousel = () => {
           <EventCard event={upComingEvent} />
         </SwiperSlide> */}
         {EVENTS.slice(0, 3).map((event: any) => (  // Always ensures six cards are displayed
-            <SwiperSlide style={{ width: "300px", height: "450px"  }}>
+            <SwiperSlide style={{ width: "300px", height: "470px"  }}>
                 <EventCard key={event.id} event={event} />
             </SwiperSlide>
         ))}

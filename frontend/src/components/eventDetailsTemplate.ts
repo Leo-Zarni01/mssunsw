@@ -16,7 +16,7 @@ export const EVENTS: Event[] = [
     date: "15TH NOV 2024",
     time: "6PM - 9PM",
     location: "COLOMBO LG02",
-    imageUrl: "XXXX",
+    imageUrl: 'events/Tazaungdine 24T3/Copy of 1.jpg',
   },
 
   {
@@ -25,7 +25,7 @@ export const EVENTS: Event[] = [
     date: "18TH SEP 2024",
     time: "6PM - 8PM",
     location: "Michael Hintze Theatre",
-    imageUrl: "XXXX",
+    imageUrl: "events/Visa Seminar 24T3/Visa Seminar.png",
   },
   {
     id: 3,
@@ -33,6 +33,6 @@ export const EVENTS: Event[] = [
     date: "14TH SEP 2024",
     time: "10AM - 2PM",
     location: "COLOMBO THEATRE A",
-    imageUrl: "XXXX",
+    imageUrl: 'events/Fresher Welcome 24T3/IMG_1693.PNG',
   },
 ]

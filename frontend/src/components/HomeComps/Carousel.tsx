@@ -47,7 +47,7 @@ const Carousel = () => {
         modules={[EffectCoverflow, Pagination, Navigation]}
         className="eventsSwiper"
       >
-        <SwiperSlide style={{ width: "300px", height: "450px"  }}>
+        <SwiperSlide style={{ width: "300px", height: "470px"  }}>
           <EventCard event={upComingEvent} />
         </SwiperSlide>
         {/* <SwiperSlide style={{ width: "300px", height: "450px"  }}>

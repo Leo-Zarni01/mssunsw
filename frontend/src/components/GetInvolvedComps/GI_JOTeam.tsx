@@ -69,7 +69,7 @@ const GI_JOTeam = () => {
                 }}
                 >
                     <Stack>
-                        <Typography variant="h6">Applications Opened</Typography>
+                        <Typography variant="h6">Applications Closed</Typography>
                         <Typography
                         sx={{
                             color: "white",
