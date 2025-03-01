@@ -1,14 +1,10 @@
-import Grid from '@mui/material/Grid2';
-// import logo from '../../assets/MSS_Logo.webp'
 import com_photo from '../../assets/IMG_8771.png'
 import tst_photo from '../../assets/IMG_6714.png'
-import { Button , Typography, Box } from '@mui/material';
+import { Button , Typography, Box, Grid2 as Grid } from '@mui/material';
 import { motion } from "framer-motion"
 import { useEffect, useState } from "react";
-import "@fontsource/poppins";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { useNavigate } from "react-router-dom";
-
 
 
 const theme = createTheme({
@@ -19,9 +15,6 @@ const theme = createTheme({
 
 
 const HP_SS = () => {
-
-    // const text = "မဂလာပါ။";
-    // const text = "မင်္ဂလာပါ။"
     const text = "မင်္ဂလာပါ..."
     const [displayedText, setDisplayedText] = useState("");
     const [index, setIndex] = useState(0);
@@ -114,7 +107,7 @@ const HP_SS = () => {
                         UNSW
                         </Typography>
                     </Box>
-                    <Box size={12}
+                    <Box
                         position="absolute"
                         top={{xs: "28%", sm: "35%", md: "50%"}}
                         left="50%"
@@ -141,9 +134,8 @@ const HP_SS = () => {
             justifyContent="center" 
             >
                 <Grid 
-                item 
                 textAlign="center" 
-                xs={12} 
+                size={{xs: 12}}
                 >
                 <Typography sx={{fontSize: {xs: "0.8rem", sm: "1rem", md: "1.3rem"}}}
                 // variant="h6"
