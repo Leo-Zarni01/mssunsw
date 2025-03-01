@@ -25,22 +25,23 @@ const GI_Bft = () => {
                             <ListItemIcon>
                                 <CircleIcon sx={{ color: "#FFA700", fontSize: 20 }}/>
                             </ListItemIcon>
-                            <ListItemText primary="Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
+                            <ListItemText primary="You’ll enjoy exclusive discounts on event
+                            tickets, special sales, and free food—helping you save more when you attend and enjoy
+                            our events regularly." />
                         </ListItem>
                         <ListItem>
                             <ListItemIcon>
                                 <CircleIcon sx={{ color: "#8BB174", fontSize: 20 }}/>
                             </ListItemIcon>
-                            <ListItemText primary="Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
+                            <ListItemText primary="You’ll also receive email updates about upcoming events,
+                            ensuring you never miss out on any exciting opportunities and experiences." />
                         </ListItem>
                         <ListItem>
                             <ListItemIcon>
                                 <CircleIcon sx={{ color: "#EE6055", fontSize: 20 }}/>
                             </ListItemIcon>
-                            <ListItemText primary="Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
+                            <ListItemText primary="Plus, we offer a welcome package that includes a uniquely designed
+                            Burmese tote bag, a membership card, and delicious Burmese snacks (like Zee Yo)!" />
                         </ListItem>
                     </List>
                 </Box>
@@ -62,22 +63,22 @@ const GI_Bft = () => {
                             <ListItemIcon>
                                 <CircleIcon sx={{ color: "#FFA700", fontSize: 20 }}/>
                             </ListItemIcon>
-                            <ListItemText primary="Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
+                            <ListItemText primary="You’ll gain valuable experience collaborate
+                            effectively, and expanding your social and professional network for the future." />
                         </ListItem>
                         <ListItem>
                             <ListItemIcon>
                                 <CircleIcon sx={{ color: "#8BB174", fontSize: 20 }}/>
                             </ListItemIcon>
-                            <ListItemText primary="Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
+                            <ListItemText primary="You’ll have the opportunity to enhance your leadership, communication,
+                            and confidence by supporting MSS events and engaging with members." />
                         </ListItem>
                         <ListItem>
                             <ListItemIcon>
                                 <CircleIcon sx={{ color: "#EE6055", fontSize: 20 }}/>
                             </ListItemIcon>
-                            <ListItemText primary="Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
+                            <ListItemText primary="Additionally, team members enjoy exclusive perks, including discounted
+                            tickets, special sales, and occational team dinners as a token of appreciation." />
                         </ListItem>
                     </List>
                 </Box>

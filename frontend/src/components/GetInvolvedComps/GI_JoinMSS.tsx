@@ -16,12 +16,9 @@ const GI_JoinMSS = () => {
                 mx: "6rem",
             }}
             >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-                eprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-                pariatur. Excepteur sint deserunt mollit anim id est laborum.      
+                Join the MSS family today, a home away from home! Becoming an MSS member
+                entails various benefits such as money off event tickets, food, and MSS
+                products.     
             </Typography>
             <Button variant="contained" color="primary" size="medium"
             onClick={() => window.open("https://tr.ee/57QyR10W54", "_blank")}
