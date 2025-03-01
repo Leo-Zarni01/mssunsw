@@ -39,9 +39,10 @@ const UpcomingEventDetails = () => {
       </Box> */}
       <CardMedia
         component="img"
-        height="400"
-        width="50"
         image={event.imageUrl}
+        sx={{
+          height: {xl: '1200px'},
+        }}
       />
 
       {/* <Box sx={{ marginTop: '4rem', marginLeft: '2rem' }}>

@@ -19,7 +19,7 @@ export const EVENTS: Event[] = [
     time: "6PM - 9PM",
     location: "COLOMBO LG02",
     imageUrl: 'events/Tazaungdine 24T3/Copy of 1.jpg',
-    description: "XXX",
+    description: "Come join MSS to celebrate DA SAUNG TAING!!! Enjoy a night of FUN games and our FAVOURITE activities like lantern painting. Get ready for some YUMMY food. We will be selling a set meal of Khaut Swe Thoke and two desserts (Thar Gu Pyin and Kaut Hnyin Sanwin Makin) for $15. We can’t wait to see everyone soon.",
     imagesUrl: [
       "/events/Tazaungdine 24T3/IMG_4744.JPG",
       "/events/Tazaungdine 24T3/IMG_4752.JPG",
@@ -42,12 +42,12 @@ export const EVENTS: Event[] = [
   },
   {
     id: 2,
-    name: "Aus Visa Pathways 2024",
+    name: "Australia Visa Pathways 2024",
     date: "18TH SEP 2024",
     time: "6:00PM - 8:00PM",
     location: "Michael Hintze Theatre",
     imageUrl: "/events/Aus Visa Pathways 2024/Visa Seminar.png",
-    description: "XXX",
+    description: "Ready for an adventure? Grab your new friends and explore the UNSW campus while you race to complete exciting challenges at game stations! Each challenge brings you closer to unlocking the ultimate chest filled with prizes like Burmese snacks and gift cards. Solve the clues, Gather your hints & Unlock the treasures! Let’s kick off Term 3 with some fun so JOIN US!!",
     imagesUrl: ["/events/Aus Visa Pathways 2024/Visa Seminar.png",],
   },
   {
@@ -57,7 +57,7 @@ export const EVENTS: Event[] = [
     time: "10:00AM - 2:00PM",
     location: "COLOMBO THEATRE A",
     imageUrl: "/events/Fresher Welcome 24T3/Fresher Welcome poster 24T3.png",
-    description: "XXX",
+    description: "Are you an international student or recent graduate looking to navigate the complexities of Australian visas? Join us for an insightful seminar featuring former MSS President Ko Ko Aung from Albert Arthur Lawyers. Gain valuable knowledge on: Temporary Graduate Visa (485), Skilled Migration Visa, Employer-Sponsored Visa, PR Pathways, Visa Extensions and Renewals, Changing Courses or Institutions",
     imagesUrl: [
       "/events/Fresher Welcome 24T3/IMG_1693.PNG",
       "/events/Fresher Welcome 24T3/IMG_1694.PNG",
@@ -74,7 +74,7 @@ export const UPCOMINGEVENTS: Event[] = [
     time: "10:30AM - 3:00PM",
     location: "COLOMBO LG01",
     imageUrl: "/events/Fresher Welcome 25T1/Fresher Welcome poster 25T1.png",
-    description: "TBD",
+    description: "မင်္ဂလာပါ everyone and to all the freshers ❤️ Join us for an exciting day at our FRESHER WELCOME where we will host a scavenger hunt, awesome games and…FREE FOOD for all members 🥳 Meet our MSS committee members and make some new friends within the MSS community. REGISTRATION LINKED IN OUR BIO ✨. See you all there 🤩",
     imagesUrl: ["/events/Fresher Welcome 25T1/Fresher Welcome poster 25T1.png"],
   }
 ]
