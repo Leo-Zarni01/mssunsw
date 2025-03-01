@@ -1,4 +1,12 @@
 import { Card, TextField, CardContent, Button, Box, Typography } from '@mui/material';
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+
+const theme = createTheme({
+    typography: {
+        fontFamily: "Poppins, sans-serif",
+    },
+});
+
 const styleTextField = {
   width: '100%',
   marginBottom: '1rem',
@@ -11,9 +19,9 @@ const styleButton = {
 
 const EventRegistrationForm = () => {
   return (
-    <>
+    <ThemeProvider theme={theme}>
       <Card variant='outlined' sx={{ borderRadius: '16px', boxShadow: 3, margin: 'auto' }} >
-        <Typography sx={{ color: '#FFA700', fontWeight: 'bold', display: 'flex', alignItems: 'center', justifyContent: 'center', marginTop: '1.5rem'}}>
+        <Typography variant='h6' sx={{ color: '#FFA700', fontWeight: 'bold', display: 'flex', alignItems: 'center', justifyContent: 'center', marginTop: '1.5rem'}}>
           Event Registration Form
         </Typography>
 
@@ -34,7 +42,7 @@ const EventRegistrationForm = () => {
           </Box>
         </CardContent>
       </Card>
-    </>
+    </ThemeProvider>
   )
 }
 

@@ -6,6 +6,13 @@ import EventRegistrationForm from '../components/EventRegistrationForm';
 import Footer from '../components/Footer';
 import EventDateTimeLoc from '../components/EventDateTimeLoc';
 import NavBar from '../components/NavComps/NavBar';
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+
+const theme = createTheme({
+    typography: {
+        fontFamily: "Poppins, sans-serif",
+    },
+});
 
 const styleTitle = {
   width: '100vw',
@@ -18,8 +25,8 @@ const styleTitle = {
 }
 
 const UpcomingEventDetails = () => {
-  return (   
-    <>
+  return (
+    <ThemeProvider theme={theme}>
       <NavBar isDark={false} />
       <Box sx={styleTitle}> Event Theme: Fresher Welcome </Box>
       <CardMedia
@@ -29,23 +36,23 @@ const UpcomingEventDetails = () => {
         image={thadingyut}
       />
 
-    <Grid container spacing={{xs: 0, sm: 10}} sx={{ padding: '0 3rem 1rem 3rem' }}>
-      <Grid size={{xs: 12, sm: 6}}>
-        <Box sx={{ marginTop: '4rem' }}></Box>
-        <AboutTheEvent />
+      <Grid container spacing={{xs: 0, sm: 10}} sx={{ padding: '0 3rem 1rem 3rem' }}>
+        <Grid size={{xs: 12, sm: 6}}>
+          <Box sx={{ marginTop: '4rem' }}></Box>
+          <AboutTheEvent />
 
-        <Box sx={{ marginTop: '4rem' }}></Box>
-        <EventDateTimeLoc />
+          <Box sx={{ marginTop: '4rem' }}></Box>
+          <EventDateTimeLoc />
+        </Grid>
+        
+        <Grid size={{xs: 12, sm: 6}}>
+          <Box sx={{ marginTop: '2rem' }}></Box>
+          <EventRegistrationForm />
+        </Grid>
       </Grid>
-      
-      <Grid size={{xs: 12, sm: 6}}>
-        <Box sx={{ marginTop: '2rem' }}></Box>
-        <EventRegistrationForm />
-      </Grid>
-    </Grid>
 
       <Footer />
-    </>
+    </ThemeProvider>
   );
 }
 

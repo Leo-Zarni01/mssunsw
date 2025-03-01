@@ -1,7 +1,4 @@
 import { Typography, Button, Box, useTheme, useMediaQuery } from '@mui/material';
-import thadingyut from '../assets/images/img-thadingyut.jpg';
-import bgray from '../assets/images/black-background-with-white-rays-light-coming-from-center_3442-2108.avif';
-import goldenray from '../assets/images/golden-light-rays-black-background_1017-2742.avif';
 import { styled } from '@mui/material/styles';
 import '../App.css';
 
@@ -48,11 +45,10 @@ const images = [
 ]
 
 const PastEventDetailsWovenPhotos = () => {
-  // const theme = useTheme();
-  // const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
-  // const isTablet = useMediaQuery(theme.breakpoints.between('sm', 'md'));
+  const theme = useTheme();
+  const isNormalScreen = useMediaQuery(theme.breakpoints.down('xl'));
 
-  const imagePositions = [
+  const imagePositionsNormal = [
     { top: '7%', left: '-2%', width: '12%', height: '32%' },
     { top: '0%', left: '12%', width: '18%', height: '28%' },
     { top: '-2%', left: '32%', width: '20%', height: '10%' },
@@ -76,61 +72,33 @@ const PastEventDetailsWovenPhotos = () => {
     { top: '93%', left: '48%', width: '24%', height: '14%' },
   ];
 
-  // const tabletPositions = [
-  //   { top: '7%', left: '-2%', width: '12%', height: '32%' },
-  //   { top: '0%', left: '12%', width: '18%', height: '28%' },
-  //   { top: '-2%', left: '32%', width: '20%', height: '10%' },
-  //   { top: '-8%', left: '58%', width: '17%', height: '20%' },
-  //   { top: '0%', left: '81%', width: '15%', height: '20%' },
-  //   { top: '10%', left: '97%', width: '12%', height: '18%' },
+  const imagePositionsLarge = [
+    { top: '7%', left: '-2%', width: '13%', height: '32%' },
+    { top: '0%', left: '12%', width: '18%', height: '30%' },
+    { top: '-2%', left: '32%', width: '20%', height: '10%' },
+    { top: '-8%', left: '55%', width: '17%', height: '20%' },
+    { top: '0%', left: '77%', width: '18%', height: '20%' },
+    { top: '10%', left: '97%', width: '12%', height: '18%' },
     
-  //   { top: '12%', left: '32%', width: '19%', height: '20%' },
-  //   { top: '15%', left: '56%', width: '20%', height: '16%' },
+    { top: '12%', left: '32%', width: '19%', height: '20%' },
+    { top: '15%', left: '54%', width: '20%', height: '16%' },
 
-  //   { top: '48%', left: '-5%', width: '12%', height: '17%' },
-  //   { top: '42%', left: '8%', width: '16%', height: '26%' },
-  //   { top: '48%', left: '77%', width: '18%', height: '20%' },
-  //   { top: '23%', left: '80%', width: '14%', height: '19%' },
-  //   { top: '34%', left: '97%', width: '10%', height: '30%' },
+    { top: '48%', left: '-5%', width: '12%', height: '17%' },
+    { top: '42%', left: '8%', width: '16%', height: '26%' },
+    { top: '48%', left: '77%', width: '18%', height: '20%' },
+    { top: '23%', left: '80%', width: '14%', height: '19%' },
+    { top: '34%', left: '97%', width: '10%', height: '30%' },
 
-  //   { top: '72%', left: '-12%', width: '28%', height: '38%' },
-  //   { top: '77%', left: '19%', width: '26%', height: '30%' },
-  //   { top: '69%', left: '50%', width: '25%', height: '20%' },
-  //   { top: '70%', left: '77%', width: '27%', height: '35%' },
-  //   { top: '93%', left: '48%', width: '24%', height: '14%' },
-  // ];
+    { top: '72%', left: '-12%', width: '28%', height: '38%' },
+    { top: '75%', left: '19%', width: '26%', height: '30%' },
+    { top: '69%', left: '50%', width: '25%', height: '20%' },
+    { top: '70%', left: '77%', width: '27%', height: '35%' },
+    { top: '93%', left: '48%', width: '24%', height: '14%' },
+  ];
 
-  // const desktopPositions = [
-  //   { top: '7%', left: '-2%', width: '12%', height: '32%' },
-  //   { top: '0%', left: '12%', width: '18%', height: '28%' },
-  //   { top: '-2%', left: '32%', width: '20%', height: '10%' },
-  //   { top: '-8%', left: '58%', width: '17%', height: '20%' },
-  //   { top: '0%', left: '81%', width: '15%', height: '20%' },
-  //   { top: '10%', left: '97%', width: '12%', height: '18%' },
-    
-  //   { top: '12%', left: '32%', width: '19%', height: '20%' },
-  //   { top: '15%', left: '56%', width: '20%', height: '16%' },
-
-  //   { top: '48%', left: '-5%', width: '12%', height: '17%' },
-  //   { top: '42%', left: '8%', width: '16%', height: '26%' },
-  //   { top: '48%', left: '77%', width: '18%', height: '20%' },
-  //   { top: '23%', left: '80%', width: '14%', height: '19%' },
-  //   { top: '34%', left: '97%', width: '10%', height: '30%' },
-
-  //   { top: '72%', left: '-12%', width: '28%', height: '38%' },
-  //   { top: '77%', left: '19%', width: '26%', height: '30%' },
-  //   { top: '69%', left: '50%', width: '25%', height: '20%' },
-  //   { top: '70%', left: '77%', width: '27%', height: '35%' },
-  //   { top: '93%', left: '48%', width: '24%', height: '14%' },
-  // ];
-
-  // const imagePositions = isMobile 
-  //   ? mobilePositions 
-  //   : isTablet 
-  //     ? tabletPositions 
-  //     : desktopPositions;
-
-
+  const imagePositions = isNormalScreen 
+    ? imagePositionsNormal 
+    : imagePositionsLarge;
 
   const ImageBox = styled(Box)({
     position: 'absolute',
@@ -150,7 +118,6 @@ const PastEventDetailsWovenPhotos = () => {
           md: '600px',
         },
         bgcolor: 'white',
-        // backgroundImage: `url(${img3905})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',

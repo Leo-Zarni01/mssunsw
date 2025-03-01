@@ -3,6 +3,7 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import { Typography } from "@mui/material";
 import MeetTheExecutivesSlide from './MeetTheExecutivesSlide';
 import "../App.css";
+import { executives } from './MeetTheExecutivesTemplate';
 
 const MeetTheExecutives = () => {
   return (
@@ -23,12 +24,9 @@ const MeetTheExecutives = () => {
         modules={[Autoplay, Pagination, Navigation]}
         className="meetExecSwiper"
       >
-        <SwiperSlide style={{ height: '100%' }}> <MeetTheExecutivesSlide /> </SwiperSlide>
-        <SwiperSlide style={{ height: '100%' }}> <MeetTheExecutivesSlide /> </SwiperSlide>
-        <SwiperSlide style={{ height: '100%' }}> <MeetTheExecutivesSlide /> </SwiperSlide>
-        <SwiperSlide style={{ height: '100%' }}> <MeetTheExecutivesSlide /> </SwiperSlide>
-        <SwiperSlide style={{ height: '100%' }}> <MeetTheExecutivesSlide /> </SwiperSlide>
-
+        {executives.map((item) => (
+          <SwiperSlide style={{ height: '100%' }}> <MeetTheExecutivesSlide executive={item} /> </SwiperSlide>
+        ))};
       </Swiper>
     </>
   )
