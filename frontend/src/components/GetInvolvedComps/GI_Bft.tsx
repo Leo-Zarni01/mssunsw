@@ -12,7 +12,7 @@ const GI_Bft = () => {
             <Grid size={{xs: 12, md: 6}}>
                 <Box
                 sx={{
-                    border: '1px solid black',
+                    boxShadow: 5,
                     borderRadius: "40px",
                     padding: "1rem",
                     mx: {xs: "2rem", md: "4rem"},
@@ -50,7 +50,7 @@ const GI_Bft = () => {
             <Grid size={{xs: 12, md: 6}}>
                 <Box
                 sx={{
-                    border: '1px solid black',
+                    boxShadow: 5,
                     borderRadius: "40px",
                     padding: "1rem",
                     mx: {xs: "2rem", md: "4rem"},

@@ -6,10 +6,10 @@ const GI_JOTeam = () => {
     return (
         <Grid container textAlign="center" 
         sx={{
-            border: '1px solid black',
+            boxShadow: 5,
             borderRadius: "40px",
             marginTop: "4rem",
-            mx: "1rem"
+            mx: "1rem",
         }}
         >
             <Grid size={12}
@@ -45,10 +45,11 @@ const GI_JOTeam = () => {
                 </Typography>
                 <Typography
                 sx={{
-                    margin: "1rem",
+                    margin: {xs: "22px", md: "2rem"},
                     mx: "6rem",
-                    height: {xs: "15rem", sm: "9rem", md: "17rem"},
+                    height: {xs: "12rem", sm: "9rem", md: "12rem", lg: "10rem", xl: "6rem"},
                     overflow: "auto",
+                    textAlign: {xs: "justify", md: "center"},
                 }}
                 >
                     MSS elects our executive team during the AGM (Term 3) period every year.
@@ -89,10 +90,11 @@ const GI_JOTeam = () => {
                 </Typography>
                 <Typography
                 sx={{
-                    margin: "1rem",
+                    margin: {xs: "22px", md: "2rem"},
                     mx: "6rem",
-                    height: {xs: "20rem", sm: "12rem", md: "17rem"},
+                    height: {xs: "12rem", sm: "12rem", md: "12rem", lg: "10rem", xl: "6rem"},
                     overflow: "auto",
+                    textAlign: {xs: "justify", md: "center"},
                 }}
                 >
                     Subcommittee members will be recruited during the EGM period.

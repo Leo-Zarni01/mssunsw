@@ -15,15 +15,16 @@ const theme = createTheme({
 
 
 const HP_SS = () => {
-    const text = "မင်္ဂလာပါ..."
+    const text = "မ င်္ဂ လာ ပါ . . ."
+    const words = text.split(" ");
     const [displayedText, setDisplayedText] = useState("");
     const [index, setIndex] = useState(0);
     const navigate = useNavigate();
 
     useEffect(() => {
         const interval = setInterval(() => {
-            if (index < text.length) {
-                setDisplayedText((prev) => prev + text[index]);
+            if (index < words.length) {
+                setDisplayedText((prev) => (prev ? prev + " " + words[index] : words[index]));
                 setIndex((prev) => prev + 1);
             } else {
                 setTimeout(() => {
@@ -129,7 +130,7 @@ const HP_SS = () => {
                     The Myanmar Student Society (MSS) connects Myanmar students through cultural events, support, and networking. Join our community!
                 </Typography>
                 <Button variant="contained" color="primary" 
-                onClick={() => navigate("/aboutus")}
+                onClick={() => navigate("/about-us")}
                 sx={{
                     fontSize: {xs: "0.8rem", sm: "1rem", md: "1.2rem"},
                     backgroundColor: "black",
