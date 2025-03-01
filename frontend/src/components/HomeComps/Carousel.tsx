@@ -1,12 +1,11 @@
 // import React, { useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Event } from "../components/eventDetailsTemplate";
 import EventCard from "../EventCard";
 // import logo from '../../assets/MSS_Logo.webp'
 
 
-// Import Swiper styles
+// // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
@@ -16,17 +15,7 @@ import './styles.css';
 
 // import required modules
 import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
-import { UPCOMINGEVENTS } from '../eventDetailsTemplate';
-
-const upComingEvent: Event =
-{
-  id: 1,
-  name: "Fresher Welcome 25T1",
-  date: "2ND MAR 2025",
-  time: "10:30AM - 3PM",
-  location: "COLOMBO LG01",
-  imageUrl: "TBD",
-}
+import { Event, UPCOMINGEVENTS } from '../eventDetailsTemplate';
 
 const Carousel = () => {
   return (
@@ -49,7 +38,7 @@ const Carousel = () => {
         className="eventsSwiper"
       >
         {UPCOMINGEVENTS.slice(0, 3).map((event: Event) => (  // Always ensures six cards are displayed
-          <SwiperSlide style={{ width: "300px", height: "450px"  }}>
+          <SwiperSlide style={{ width: "300px", height: "470px"  }}>
             <EventCard key={event.id} event={event} type='upcoming' />
         </SwiperSlide>
           ))}

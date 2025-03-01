@@ -41,7 +41,7 @@ export const committeeMembers: CommitteeTeam = {
         name: "Thet Htar Aung",
         title: "Secretary",
         imageUrl: formatImageFileName("2025", "executives", "Thet Htar Aung"),
-        memory: "",
+        memory: "Singing Lat Tee and Dancing at Karaoke on a random Saturday night",
       },
       {
         name: "Phyo Mon Su",

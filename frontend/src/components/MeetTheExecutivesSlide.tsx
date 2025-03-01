@@ -24,7 +24,7 @@ const MeetTheExecutivesSlide: React.FC<{executive: ExecProps}> = ({ executive })
             flexDirection='column'
             alignItems="center"
           >
-            <Typography sx={{ marginBottom: '2rem', textAlign: 'justify', maxWidth: '500px', width: '90%' }}>
+            <Typography sx={{ marginBottom: '2rem', textAlign: 'justify', width: {xs: '80%', xl: '90%'}, maxWidth: '500px', }}>
               {executive.memory}
             </Typography>
 

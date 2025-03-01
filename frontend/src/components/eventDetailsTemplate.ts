@@ -18,7 +18,7 @@ export const EVENTS: Event[] = [
     date: "15TH NOV 2024",
     time: "6PM - 9PM",
     location: "COLOMBO LG02",
-    imageUrl: "XXXX",
+    imageUrl: 'events/Tazaungdine 24T3/Copy of 1.jpg',
     description: "XXX",
     imagesUrl: [
       "/events/Tazaungdine 24T3/IMG_4744.JPG",
