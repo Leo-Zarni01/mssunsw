@@ -1,10 +1,17 @@
 import { Event } from "./eventDetailsTemplate";
 
 interface EventProps {
-  event: Event
+  event: Event,
+  type: string,
 }
 
-const EventCard: React.FC<EventProps> = ({ event }) => {
+const EventCard: React.FC<EventProps> = ({ event, type }) => {
+  let route = "";
+  if (type === "past") {
+    route = `/past-events/${event.id}`;
+  } else if (type === "upcoming") {
+    route = `/events/${event.id}`;
+  }
   return (
     <div className="w-80 h-full border border-orange-100 rounded-2xl shadow-md overflow-hidden bg-white font-poppins">
       <div className="relative">
@@ -25,7 +32,7 @@ const EventCard: React.FC<EventProps> = ({ event }) => {
           <p>Location: <span className="font-medium">{event.location}</span></p>
         </div>
         <a
-          href="#"
+          href={route}
           className="mt-4 inline-block text-right w-full text-yellow-500 hover:text-blue-600 text-sm font-medium"
         >
           More Details &gt;

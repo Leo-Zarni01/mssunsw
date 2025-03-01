@@ -1,23 +1,41 @@
-import { Card, TextField, CardContent, Button, Box, Typography } from '@mui/material';
-const styleTextField = {
-  width: '100%',
-  marginBottom: '1rem',
-}
+import { Card, Button, Box, Typography } from '@mui/material';
+import { createTheme, ThemeProvider } from "@mui/material/styles";
 
-const styleButton = {
-  color: '#FFA700',
-  backgroundColor: '#000000',
-}
+const theme = createTheme({
+    typography: {
+        fontFamily: "Poppins, sans-serif",
+    },
+});
+
+// const styleTextField = {
+//   width: '100%',
+//   marginBottom: '1rem',
+// }
 
 const EventRegistrationForm = () => {
+  const handleButtonClick = () => {
+    window.open('https://docs.google.com/forms/d/e/1FAIpQLSfmo3733gYYM93mHpwvQ6MKthEopuXLmJuxPFiVMZ8yjxKxhg/viewform');
+  }
+  
   return (
-    <>
-      <Card variant='outlined' sx={{ borderRadius: '16px', boxShadow: 3, margin: 'auto' }} >
-        <Typography sx={{ color: '#FFA700', fontWeight: 'bold', display: 'flex', alignItems: 'center', justifyContent: 'center', marginTop: '1.5rem'}}>
-          Event Registration Form
+    <ThemeProvider theme={theme}>
+      <Card variant='outlined' sx={{ borderRadius: '16px', boxShadow: 3, margin: 'auto'}} >
+        <Typography variant='h6' sx={{ color: '#FFA700', fontWeight: 'bold', display: 'flex', alignItems: 'center', justifyContent: 'center', marginTop: '1.5rem'}}>
+          Register for the Event
         </Typography>
 
-        <CardContent>
+        <Box
+          sx={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            height: '100px',
+          }}
+        >
+          <Button sx={{ color: '#FFA700', backgroundColor: '#000000' }} onClick={handleButtonClick}> Register Now! </Button>
+        </Box>
+
+        {/* <CardContent>
           <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
             <TextField label="First Name" required sx={styleTextField} />
             <TextField label="Last Name" required sx={styleTextField} />
@@ -32,9 +50,9 @@ const EventRegistrationForm = () => {
 
             <Button variant="contained" sx={styleButton}> Register Now! </Button>
           </Box>
-        </CardContent>
+        </CardContent> */}
       </Card>
-    </>
+    </ThemeProvider>
   )
 }
 

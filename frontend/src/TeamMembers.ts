@@ -1,10 +1,11 @@
-interface ExecProps {
+export interface ExecProps {
   name: string;
   title: string;
   imageUrl: string;
+  memory?: string;
 }
 
-interface CommitteeTeam {
+export interface CommitteeTeam {
   [key: number]: {
     executives: ExecProps[];
     subcommittees: {
@@ -28,42 +29,50 @@ export const committeeMembers: CommitteeTeam = {
         name: "Nile Yar",
         title: "President",
         imageUrl: formatImageFileName("2025", "executives", "Nile Yar"),
+        memory: "Being a part of the Myanmar Students' Society (MSS) has been one of the most memorable experiences of my university life at UNSW. From planning cultural events like Thingyan, Da Saung Taing, and Thadingyut  to collaborating with other societies and helping communities back home, each moment has been filled with pride and purpose. MSS has helped me stay connected to my roots while giving me the opportunity to celebrate and share our culture with the wider community. The friendships and memories I’ve made here will always hold a special place in my heart.",
       },
       {
         name: "Myat Thuzar Nwe",
         title: "Vice President",
         imageUrl: formatImageFileName("2025", "executives", "Myat Thuzar Nwe"),
-      },
-      {
-        name: "Arkar Myo",
-        title: "Events Director",
-        imageUrl: formatImageFileName("2025", "executives", "Arkar Myo"),
-      },
-      {
-        name: "Myat Thadar Kyaw",
-        title: "Events Director",
-        imageUrl: formatImageFileName("2025", "executives", "Myat Thadar Kyaw"),
-      },
-      {
-        name: "Aye Chan San",
-        title: "Events Director",
-        imageUrl: formatImageFileName("2025", "executives", "Aye Chan San"),
-      },
-      {
-        name: "Ada Daewi Aung",
-        title: "Media and Publicity Director",
-        imageUrl: formatImageFileName("2025", "executives", "Ada Daewi Aung"),
+        memory: "Each event brings its own share of ‘chaos,’ but I will always cherish the late nights spent celebrating the International Night Markets with the team. Amidst the hustle and bustle, team spirit shone brightly as everyone embraced the chaos and made the most of it.",
       },
       {
         name: "Thet Htar Aung",
         title: "Secretary",
         imageUrl: formatImageFileName("2025", "executives", "Thet Htar Aung"),
+        memory: "Singing Lat Tee and Dancing at Karaoke on a random Saturday night",
       },
       {
         name: "Phyo Mon Su",
         title: "Arc Delegate",
         imageUrl: formatImageFileName("2025", "executives", "Phyo Mon Su"),
-      }
+        memory: "Definitely T3 2023 Fresher Welcome! Having Nangyi Thoke with Burmese friends after such a long time is something I’ll never forget. It was like a comforting, warm embrace, especially after not hearing or speaking Burmese for so long—it felt like reconnecting with a part of me I’d missed.",
+      },
+      {
+        name: "Myat Thadar Kyaw",
+        title: "Treasurer",
+        imageUrl: formatImageFileName("2025", "executives", "Myat Thadar Kyaw"),
+        memory: "Definitely 2024 Thingyan. The stormy weather brought strong winds and heavy rain, knocking down our loudspeaker and collapsing the tent. We were drenched in our traditional clothes, but instead of letting it ruin the day, we laughed, helped each other, and embraced the chaos. Despite everything, the festival spirit stayed strong, making it a truly memorable celebration!",
+      },
+      {
+        name: "Arkar Myo",
+        title: "Events Director",
+        imageUrl: formatImageFileName("2025", "executives", "Arkar Myo"),
+        memory: "I hope everyone will remember the 2024 Thingyan. It was an unforgettable day, had bad weather, filled with joy and laughter. Being away from home can be tough, but this society has made me feel at home again. The people here are kind and warm-hearted, and I will truly miss all the events with MSS.",
+      },
+      {
+        name: "Aye Chan San",
+        title: "Events Director",
+        imageUrl: formatImageFileName("2025", "executives", "Aye Chan San"),
+        memory: "As a food lover, I really enjoyed the moments we made Nan Gyi Thoke together. A lot tiring, but the taste never let me down. Shared laughter, enjoyed the food we made ourselves together with lovely mates - such a unique experience which makes me feel like home.",
+      },
+      {
+        name: "Ada Daewi Aung",
+        title: "Media and Publicity Director",
+        imageUrl: formatImageFileName("2025", "executives", "Ada Daewi Aung"),
+        memory: "Being a part of MSS has allowed me to connect with my Burmese culture and find a community that makes me feel like I’m not so far away from home. As someone who has always felt a bit alienated from my Burmese heritage, I will never forget how welcome I felt at my first couple MSS events. I was driven to create the same feeling of belonging for other Burmese students who desired to feel more connected to their Burmese culture. My favourite memories during my time in MSS have definitely been the ones that have come from working within my team, such as the chaos of cooking food for events and organising Thingyan.",
+      },
     ],
     subcommittees: [],
   },

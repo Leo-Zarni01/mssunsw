@@ -11,10 +11,8 @@
   --font-poppins: Poppins, "sans-serif";
 }
 
-
 @layer base {
   html {
     font-family: 'Poppins', sans-serif;
   }
 }
-
