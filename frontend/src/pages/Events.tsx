@@ -5,10 +5,10 @@ import { Event, EVENTS } from "../components/eventDetailsTemplate";
 const upComingEvent: Event =
 {
   id: 1,
-  name: "Fresher Welcome",
-  date: "TBD",
-  time: "TBD",
-  location: "TBD",
+  name: "Fresher Welcome 25T1",
+  date: "2ND MAR 2025",
+  time: "10:30AM - 3PM",
+  location: "COLOMBO LG01",
   imageUrl: "TBD",
 }
 
