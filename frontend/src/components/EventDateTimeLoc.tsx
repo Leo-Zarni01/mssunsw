@@ -1,5 +1,7 @@
 import { Typography, Box, List, ListItem } from '@mui/material';
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import React from 'react';
+import { Event } from './eventDetailsTemplate';
 
 const theme = createTheme({
     typography: {
@@ -7,7 +9,7 @@ const theme = createTheme({
     },
 });
 
-const EventDateTimeLoc = () => {
+const EventDateTimeLoc: React.FC<{event: Event}> = ({ event }) => {
   return (
     <ThemeProvider theme={theme}>
       <Typography sx={{ fontWeight: 'bold' }}> Event Details </Typography>
@@ -15,15 +17,15 @@ const EventDateTimeLoc = () => {
       <Box sx={{ paddingLeft: '2rem'}}>
         <List sx={{ listStyleType: 'disc' }}>
           <ListItem sx={{ display: 'list-item' }}>
-            <Typography>Date: 18/07/2024 (Wednesday)</Typography>
+            <Typography>Date: {event.date} </Typography>
           </ListItem>
 
           <ListItem sx={{ display: 'list-item' }}>
-            <Typography>Time: 10:00 am</Typography>
+            <Typography>Time: {event.time} </Typography>
           </ListItem>
 
           <ListItem sx={{ display: 'list-item' }}>
-            <Typography>Location: Main Library</Typography>
+            <Typography>Location: {event.location}</Typography>
           </ListItem>
         </List>
       </Box>

@@ -16,6 +16,7 @@ import './styles.css';
 
 // import required modules
 import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
+import { UPCOMINGEVENTS } from '../eventDetailsTemplate';
 
 const upComingEvent: Event =
 {
@@ -47,9 +48,11 @@ const Carousel = () => {
         modules={[EffectCoverflow, Pagination, Navigation]}
         className="eventsSwiper"
       >
-        <SwiperSlide style={{ width: "300px", height: "450px"  }}>
-          <EventCard event={upComingEvent} />
+        {UPCOMINGEVENTS.slice(0, 3).map((event: Event) => (  // Always ensures six cards are displayed
+          <SwiperSlide style={{ width: "300px", height: "450px"  }}>
+            <EventCard key={event.id} event={event} type='upcoming' />
         </SwiperSlide>
+          ))}
         {/* <SwiperSlide style={{ width: "300px", height: "450px"  }}>
           <EventCard event={upComingEvent} />
         </SwiperSlide> */}

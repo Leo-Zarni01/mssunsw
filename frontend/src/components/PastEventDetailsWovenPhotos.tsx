@@ -1,51 +1,10 @@
 import { Typography, Button, Box, useTheme, useMediaQuery } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import '../App.css';
+import React from 'react';
+import { Event } from './eventDetailsTemplate';
 
-
-import img3815 from '../assets/images/picnic24T2/IMG_3815.JPG';
-import img3822 from '../assets/images/picnic24T2/IMG_3822.JPG';
-import img3826 from '../assets/images/picnic24T2/IMG_3826.JPG';
-import img3829 from '../assets/images/picnic24T2/IMG_3829.JPG';
-import img3835 from '../assets/images/picnic24T2/IMG_3835.JPG';
-import img3838 from '../assets/images/picnic24T2/IMG_3838.JPG';
-import img3844 from '../assets/images/picnic24T2/IMG_3844.JPG';
-import img3865 from '../assets/images/picnic24T2/IMG_3865.JPG';
-import img3867 from '../assets/images/picnic24T2/IMG_3867.JPG';
-import img3869 from '../assets/images/picnic24T2/IMG_3869.JPG';
-import img3870 from '../assets/images/picnic24T2/IMG_3870.JPG';
-import img3881 from '../assets/images/picnic24T2/IMG_3881.JPG';
-import img3885 from '../assets/images/picnic24T2/IMG_3885.JPG';
-import img3898 from '../assets/images/picnic24T2/IMG_3898.JPG';
-import img3900 from '../assets/images/picnic24T2/IMG_3900.JPG';
-import img3905 from '../assets/images/picnic24T2/IMG_3905.JPG';
-import img3914 from '../assets/images/picnic24T2/IMG_3914.JPG';
-import img7481 from '../assets/images/picnic24T2/IMG_7481.JPG';
-import { transform } from 'framer-motion';
-
-const images = [
-  img3826,
-  img3829,
-  img3835,
-  img3838,
-  img3844,
-  img3865,
-  img3867,
-  img3869,
-  img3870,
-  img3881,
-  img3885,
-  img3898,
-  img3900,
-  img3905,
-  img3914,
-  img7481,
-  img3822,
-  img3815,
-]
-
-
-const PastEventDetailsWovenPhotos = () => {
+const PastEventDetailsWovenPhotos: React.FC<{ event: Event}> = ({ event }) => {
   const theme = useTheme();
   const isNormalScreen = useMediaQuery(theme.breakpoints.down('xl'));
 
@@ -179,7 +138,7 @@ const PastEventDetailsWovenPhotos = () => {
           >
             <Box
               component="img"
-              src={images[index]}
+              src={event.imagesUrl[index % event.imagesUrl.length]}
               alt={`MSS ${index + 1}`}
               sx={{
                 width: '100%',
@@ -215,7 +174,7 @@ const PastEventDetailsWovenPhotos = () => {
             color: 'black',
           }}
         >
-          Picnic @ Clovelly Beach 2024
+          { event.name }
         </Typography>
         
         <Button

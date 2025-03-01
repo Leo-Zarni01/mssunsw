@@ -13,12 +13,12 @@ const PageList = () => {
     <Routes>
       <Route path='/' element={<HomePage />} />
       <Route path='/about-us' element={<OurStory />} />
-      <Route path='/events/1' element={<UpcomingEventDetails />} />
+      <Route path='/events/:id' element={<UpcomingEventDetails />} />
       <Route path='/events/:eventId/photos' element={<PastEventPhotoGallery />} /> {/* /events/:id/photos */}
       <Route path='/events' element={<Events />} />
       <Route path='/team' element={<Teams />} />
       <Route path='/get-involved' element={<GetInvolved />} />
-      <Route path='/past-events/1' element={<PastEventDetails />} />
+      <Route path='/past-events/:id' element={<PastEventDetails />} />
     </Routes>
   )
 }
