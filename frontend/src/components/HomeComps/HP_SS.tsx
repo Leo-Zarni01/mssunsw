@@ -129,7 +129,7 @@ const HP_SS = () => {
                 >
                 <Typography sx={{fontSize: {xs: "0.8rem", sm: "1rem", md: "1.3rem"}}}
                  gutterBottom>
-                    The Myanmar Student Society (MSS) brings Myanmar students together through vibrant cultural events, support networks, and meaningful connections. Be part of our community today!
+                    The Myanmar Students' Society (MSS) brings Myanmar students together through vibrant cultural events, support networks, and meaningful connections. Be part of our community today!
                 </Typography>
                 <Button variant="contained" color="primary" 
                 onClick={() => navigate("/about-us")}
