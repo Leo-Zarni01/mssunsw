@@ -26,7 +26,7 @@ const EventCard: React.FC<EventProps> = ({ event, type }) => {
       </div>
       <div className="p-8">
         <h2 className="text-2xl text-yellow-500 text-center">{event.name}</h2>
-        <div className="mt-10 space-y-4 text-sm text-gray-600">
+        <div className="mt-10 space-y-4 text-sm text-black">
           <p>Date: <span className="font-medium">{event.date}</span></p>
           <p>Time: <span className="font-medium">{event.time}</span></p>
           <p>Location: <span className="font-medium">{event.location}</span></p>
