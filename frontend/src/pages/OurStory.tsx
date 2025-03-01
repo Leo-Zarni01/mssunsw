@@ -130,9 +130,15 @@ const OurStory = () => {
           dotcolor="#ee6055"
         />
         <Timelinecard
-          time="2033"
+          time="2023"
           activity="AHEGS Approved"
           details="AHEGS stands for the Australian Higher Education Graduation Statement. It is a document issued to graduates detailing their academic achievements and extracurricular activities alongside their graduation statement."
+          dotcolor="#ffd700"
+        />
+        <Timelinecard
+          time="2024 onwards"
+          activity="More Events for the fun"
+          details="Stay Tuned to connect with fellow Burmese students"
           dotcolor="#ffd700"
         />
       </Timeline>
