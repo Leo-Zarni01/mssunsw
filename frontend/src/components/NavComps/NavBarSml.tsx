@@ -63,8 +63,6 @@ const NavBarSml:FC<Args> = ({isDark}) => {
                 <MenuIcon
                 className="mt-3.5 sm:mt-6 md:mt-6 mr-2"
                 sx={{
-                //     mt: {xs: "0.7rem", sm: "1.5rem", md: "1rem"}, 
-                //     mr: "0.5rem",
                     fontSize: {xs: "1.7rem", sm: "2.2rem"}
                 }}
                 onClick={() => setIsOpen(true)}
@@ -73,7 +71,6 @@ const NavBarSml:FC<Args> = ({isDark}) => {
                     src={logo}
                     alt="MSS Logo"
                     className="w-12 sm:w-18 h-12 sm:h-18"
-                    // style={{width: "4rem", height: "4rem"}}
                 />
             </Stack>
             

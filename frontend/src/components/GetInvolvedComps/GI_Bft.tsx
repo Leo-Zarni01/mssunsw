@@ -54,7 +54,7 @@ const GI_Bft = () => {
                     borderRadius: "40px",
                     padding: "1rem",
                     mx: {xs: "2rem", md: "4rem"},
-                    my: {xs: "1rem", md: "2rem"}  
+                    my: {xs: "1rem", md: "2rem"}, 
                 }}
                 >
                     <Typography variant="h5" sx={{color: "#8BB174", my: "1rem"}}>Team benefits</Typography>

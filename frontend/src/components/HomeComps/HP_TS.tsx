@@ -24,7 +24,6 @@ const HP_TS = () => {
         sx={{
             backgroundColor: "#FCF6D7",
             height: "40rem",
-            // opacity: "0.3"
         }}
         >
             <Grid size={12} textAlign="center" sx={{paddingTop: "2rem"}}>
@@ -53,7 +52,6 @@ const HP_TS = () => {
                     Upcoming Events
                 </Typography>
             </Grid>
-            {/* <Carousel /> */}
             {eventState === "upcoming" ? <Carousel /> : <PastCarousel />}
         </Grid>
         </ThemeProvider>
