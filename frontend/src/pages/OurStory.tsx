@@ -120,7 +120,7 @@ const OurStory = () => {
         <Timelinecard
           time="2022"
           activity="Thadingyut Festival"
-          details="our biggest event yet! UNSW Myanmar Student Society x International Markets"
+          details="Our biggest event yet! UNSW Myanmar Student Society x International Markets"
           dotcolor="#8bb174"
         />
         <Timelinecard
