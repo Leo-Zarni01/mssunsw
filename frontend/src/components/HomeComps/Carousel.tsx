@@ -4,13 +4,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import EventCard from "../EventCard";
 // import logo from '../../assets/MSS_Logo.webp'
 
-
-// // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/effect-coverflow';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-
 import './styles.css';
 
 // import required modules

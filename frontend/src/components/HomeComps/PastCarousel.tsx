@@ -2,12 +2,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Event, EVENTS } from "../eventDetailsTemplate";
 import EventCard from "../EventCard";
 
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/effect-coverflow';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-
 import './styles.css';
 
 // import required modules
@@ -49,7 +43,7 @@ const PastCarousel = () => {
         </SwiperSlide> */}
         {EVENTS.slice(0, 3).map((event: Event) => (  // Always ensures six cards are displayed
             <SwiperSlide style={{ width: "300px", height: "470px"  }}>
-                <EventCard key={event.id} event={event} />
+                <EventCard key={event.id} event={event} type='past' />
             </SwiperSlide>
         ))}
         {/* <SwiperSlide>
