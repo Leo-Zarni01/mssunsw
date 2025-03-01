@@ -61,8 +61,10 @@ const HP_SS = () => {
                         position="absolute"
                         top={{xs: "15%", sm: "17%", md: "30%"}}
                         left="50%"
+                        textAlign="center"
                         style={{
                         transform: 'translate(-50%, -50%)',
+                        width: "100%"
                         }}
                     >
                         <motion.div
