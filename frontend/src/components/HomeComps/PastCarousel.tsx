@@ -32,6 +32,7 @@ const PastCarousel = () => {
         centeredSlides={true}
         navigation={true}
         slidesPerView={'auto'}
+        loop={true}
         coverflowEffect={{
           rotate: 0,
           stretch: 0,
@@ -46,7 +47,7 @@ const PastCarousel = () => {
         {/* <SwiperSlide style={{ width: "300px", height: "450px"  }}>
           <EventCard event={upComingEvent} />
         </SwiperSlide> */}
-        {EVENTS.slice(0, 6).map((event: any) => (  // Always ensures six cards are displayed
+        {EVENTS.slice(0, 3).map((event: any) => (  // Always ensures six cards are displayed
             <SwiperSlide style={{ width: "300px", height: "450px"  }}>
                 <EventCard key={event.id} event={event} />
             </SwiperSlide>

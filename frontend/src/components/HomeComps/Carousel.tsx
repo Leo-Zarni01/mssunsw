@@ -20,10 +20,10 @@ import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
 const upComingEvent: Event =
 {
   id: 1,
-  name: "Fresher Welcome",
-  date: "TBD",
-  time: "TBD",
-  location: "TBD",
+  name: "Fresher Welcome 25T1",
+  date: "2ND MAR 2025",
+  time: "10:30AM - 3PM",
+  location: "COLOMBO LG01",
   imageUrl: "TBD",
 }
 
@@ -45,14 +45,14 @@ const Carousel = () => {
         }}
         pagination={true}
         modules={[EffectCoverflow, Pagination, Navigation]}
-        className="mySwiper"
+        className="eventsSwiper"
       >
         <SwiperSlide style={{ width: "300px", height: "450px"  }}>
           <EventCard event={upComingEvent} />
         </SwiperSlide>
-        <SwiperSlide style={{ width: "300px", height: "450px"  }}>
+        {/* <SwiperSlide style={{ width: "300px", height: "450px"  }}>
           <EventCard event={upComingEvent} />
-        </SwiperSlide>
+        </SwiperSlide> */}
         {/* <SwiperSlide>
           <img src={logo} />
         </SwiperSlide>
