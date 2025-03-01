@@ -67,11 +67,14 @@ const NavBarSml:FC<Args> = ({isDark}) => {
                 }}
                 onClick={() => setIsOpen(true)}
                 ></MenuIcon>
-                <img 
-                    src={logo}
-                    alt="MSS Logo"
-                    className="w-12 sm:w-18 h-12 sm:h-18"
-                />
+                <a href='/'>
+                    <img 
+                        src={logo}
+                        alt="MSS Logo"
+                        className="w-12 sm:w-18 h-12 sm:h-18"
+                        // style={{width: "4rem", height: "4rem"}}
+                    />
+                </a>
             </Stack>
             
             <Stack direction="row" spacing={2} >

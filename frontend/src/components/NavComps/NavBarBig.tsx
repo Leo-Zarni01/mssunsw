@@ -47,11 +47,13 @@ const NavBarBig: FC<Args> = ({ isDark }) => {
       >
         {/* Home logo and tabs */}
         <Stack direction="row" spacing={2} sx={{ m: 2 }}>
-          <img
-            src={logo}
-            alt="MSS Logo"
-            className="w-20 h-20"
-          />
+          <a href='/'>
+            <img
+              src={logo}
+              alt="MSS Logo"
+              className="w-20 h-20"
+            />
+          </a>
           <Stack direction="row" spacing={7} sx={{
             pt: { xs: 2, sm: 3, md: 3 },
             m: { xs: 2, sm: 3, md: 2 },
