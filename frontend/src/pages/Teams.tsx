@@ -1,9 +1,8 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import NavBar from "../components/NavComps/NavBar";
 import { SliderComponent } from "../components/Slider";
 import { committeeMembers } from "../TeamMembers";
 import Footer from "../components/Footer";
-import { useLocation } from "react-router";
 
 const Teams = () => {
   const [year, setYear] = useState<number>(2025);
@@ -14,7 +13,7 @@ const Teams = () => {
 
   return (
     <>
-      <NavBar />
+      <NavBar isDark={false} />
       <div className="flex items-center justify-center">
         <p className="text-3xl text-[#FFA700]">Meet our Team</p>
       </div>

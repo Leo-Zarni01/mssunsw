@@ -14,6 +14,11 @@ interface CommitteeTeam {
     }[]
   }
 }
+
+const formatImageFileName = (year: string, position: string, name: string) => {
+  return `teams/${year}/${position}/${name.replace(/ /g, " ")}.jpeg`;
+};
+
 const placeHolderUrl: string = "https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
 
 export const committeeMembers: CommitteeTeam = {
@@ -22,12 +27,12 @@ export const committeeMembers: CommitteeTeam = {
       {
         name: "Nile Yar",
         title: "President",
-        imageUrl: placeHolderUrl,
+        imageUrl: formatImageFileName("2025", "executives", "Nile Yar"),
       },
       {
         name: "Myat Thuzar Nwe",
         title: "Vice President",
-        imageUrl: placeHolderUrl,
+        imageUrl: formatImageFileName("2025", "executives", "Myat Thuzar Nwe"),
       },
       {
         name: "Arkar Myo",
@@ -67,89 +72,90 @@ export const committeeMembers: CommitteeTeam = {
       {
         name: "Hein Sett Aung",
         title: "President",
-        imageUrl: placeHolderUrl,
+        imageUrl: formatImageFileName("2024", "executives", "Hein Sett Aung"),
       },
       {
         name: "Nile Yar",
         title: "Vice President",
-        imageUrl: placeHolderUrl,
+        imageUrl: formatImageFileName("2024", "executives", "Nile Yar"),
       },
       {
         name: "Shun Le Yee Aung",
         title: "Secretary",
-        imageUrl: placeHolderUrl,
+        imageUrl: formatImageFileName("2024", "executives", "Shun Le Yee Aung"),
       },
       {
         name: "Zayar Htut",
         title: "Treasurer",
-        imageUrl: placeHolderUrl,
+        imageUrl: formatImageFileName("2024", "executives", "Zayar Htut"),
       },
       {
         name: "Myat Thuzar Nwe",
         title: "Arc Delegate",
-        imageUrl: placeHolderUrl,
+        imageUrl: formatImageFileName("2024", "executives", "Myat Thuzar Nwe"),
       },
       {
         name: "Kyi Sin Lin Htun",
         title: "Media and Publicity Director",
-        imageUrl: placeHolderUrl,
+        imageUrl: formatImageFileName("2024", "executives", "Kyi Sin Lin Htun"),
       },
       {
-        name: "May Lynn Let Aung",
+        name: "Phoebe Aung",
         title: "Events Director",
-        imageUrl: placeHolderUrl,
+        imageUrl: formatImageFileName("2024", "executives", "Phoebe Aung"),
       },
     ],
     subcommittees: [
       {
         name: "Kaung Pyae Sone",
         title: "Events",
-        imageUrl: placeHolderUrl,
+        imageUrl: formatImageFileName("2024", "subcommittees", "Kaung Pyae Sone"),
       },
       {
         name: "Khant Zarni",
         title: "Events",
-        imageUrl: placeHolderUrl,
+        imageUrl: formatImageFileName("2024", "subcommittees", "Khant Zarni"),
       },
       {
         name: "Arkar Myo",
         title: "Events",
-        imageUrl: placeHolderUrl,
+        imageUrl: formatImageFileName("2024", "subcommittees", "Arkar Myo"),
       },
       {
         name: "Nyi Minn Aung",
         title: "Events",
-        imageUrl: placeHolderUrl,
+        imageUrl: formatImageFileName("2024", "subcommittees", "Nyi Minn Aung"),
       },
       {
         name: "Myat Thadar Kyaw",
         title: "Events",
-        imageUrl: placeHolderUrl,
+        imageUrl: formatImageFileName("2024", "subcommittees", "Myat Thadar Kyaw"),
       },
       {
         name: "Aye Chan San",
         title: "Events",
-        imageUrl: placeHolderUrl,
+        imageUrl: formatImageFileName("2024", "subcommittees", "Aye Chan San"),
       },
       {
         name: "Paing Paing",
         title: "Media & Publicity",
-        imageUrl: placeHolderUrl,
+
+        imageUrl: formatImageFileName("2024", "subcommittees", "Paing Paing"),
       },
       {
         name: "Ada Daewi Aung",
         title: "Media & Publicity",
-        imageUrl: placeHolderUrl,
+        imageUrl: formatImageFileName("2024", "subcommittees", "Ada Daewi Aung"),
       },
       {
         name: "Zin Wai Lwin Naing",
         title: "Media & Publicity",
-        imageUrl: placeHolderUrl,
+        imageUrl: formatImageFileName("2024", "subcommittees", "Zin Wai Lwin Naing"),
       },
       {
         name: "Chaw Su Thwe",
         title: "Media & Publicity",
-        imageUrl: placeHolderUrl,
+        imageUrl: formatImageFileName("2024", "subcommittees", "Chaw Su Thwe"),
       },
     ],
   },
