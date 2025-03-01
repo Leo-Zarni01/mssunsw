@@ -22,7 +22,7 @@ const Teams = () => {
       </div>
       <div className="font-poppins">
         {/* Executives Section */}
-        <div className="flex items-center justify-center mt-14">
+        <div className="flex items-center justify-center mt-10 mb-10">
           <p className="text-3xl text-[#FFA700]">Executives</p>
         </div>
         <div className="flex justify-center">
@@ -45,7 +45,7 @@ const Teams = () => {
         {(year === 2024 || year === 2025) && (
           <>
             {/* Media Subcommittee */}
-            <div className="flex items-center justify-center mt-10">
+            <div className="flex items-center justify-center mt-10 mb-10">
               <p className="text-2xl text-[#FFA700]">Media Subcommittee</p>
             </div>
             <div className="flex justify-center">
@@ -66,7 +66,7 @@ const Teams = () => {
             </div>
 
             {/* Events Subcommittee */}
-            <div className="flex items-center justify-center mt-10">
+            <div className="flex items-center justify-center mt-10 mb-10">
               <p className="text-2xl text-[#FFA700]">Events Subcommittee</p>
             </div>
             <div className="flex justify-center">

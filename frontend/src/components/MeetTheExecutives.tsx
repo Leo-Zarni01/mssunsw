@@ -15,7 +15,7 @@ const theme = createTheme({
 const MeetTheExecutives = () => {
   return (
     <ThemeProvider theme={theme}>
-      <Typography variant="h5" sx={{ fontWeight: 'regular', color: "#EE6055", display: "flex" , justifyContent: "center" }}> Meet The Executives </Typography>
+      <Typography variant="h5" sx={{ fontWeight: 'regular', color: "#EE6055", display: "flex" , justifyContent: "center", marginTop: "3rem" }}> Meet The Executives </Typography>
       <Swiper
         slidesPerView={1}
         spaceBetween={30}

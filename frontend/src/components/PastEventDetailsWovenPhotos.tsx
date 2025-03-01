@@ -44,6 +44,7 @@ const images = [
   img3815,
 ]
 
+
 const PastEventDetailsWovenPhotos = () => {
   const theme = useTheme();
   const isNormalScreen = useMediaQuery(theme.breakpoints.down('xl'));

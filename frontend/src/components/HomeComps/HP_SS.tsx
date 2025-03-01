@@ -1,5 +1,5 @@
 import Grid from '@mui/material/Grid2';
-import logo from '../../assets/MSS_Logo.webp'
+// import logo from '../../assets/MSS_Logo.webp'
 import com_photo from '../../assets/IMG_8771.png'
 import tst_photo from '../../assets/IMG_6714.png'
 import { Button , Typography, Box } from '@mui/material';
@@ -7,6 +7,8 @@ import { motion } from "framer-motion"
 import { useEffect, useState } from "react";
 import "@fontsource/poppins";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { useNavigate } from "react-router-dom";
+
 
 
 const theme = createTheme({
@@ -23,6 +25,7 @@ const HP_SS = () => {
     const text = "မင်္ဂလာပါ..."
     const [displayedText, setDisplayedText] = useState("");
     const [index, setIndex] = useState(0);
+    const navigate = useNavigate();
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -48,7 +51,7 @@ const HP_SS = () => {
                     <Box
                     sx={{
                         width: '100%', 
-                        height: { xs: "22rem", sm: "30rem", md: "40rem" }, 
+                        height: { xs: "22rem", sm: "30rem", md: "46rem" }, 
                         // border: '1px solid black', 
                         opacity: 0.8,
                         backgroundImage: `url(${com_photo})`,
@@ -72,7 +75,7 @@ const HP_SS = () => {
                     /> */}
                     <Box
                         position="absolute"
-                        top={{xs: "15%", sm: "17%", md: "25%"}}
+                        top={{xs: "15%", sm: "17%", md: "30%"}}
                         left="50%"
                         style={{
                         transform: 'translate(-50%, -50%)',
@@ -94,7 +97,7 @@ const HP_SS = () => {
                     </Box>
                     <Box
                         position="absolute"
-                        top={{xs: "23%", sm:"28%", md: "38%"}}
+                        top={{xs: "23%", sm:"28%", md: "43%"}}
                         left="50%"
                         style={{
                         transform: 'translate(-50%, -50%)',
@@ -113,7 +116,7 @@ const HP_SS = () => {
                     </Box>
                     <Box size={12}
                         position="absolute"
-                        top={{xs: "28%", sm: "35%", md: "46%"}}
+                        top={{xs: "28%", sm: "35%", md: "50%"}}
                         left="50%"
                         textAlign="center"
                         style={{
@@ -145,9 +148,10 @@ const HP_SS = () => {
                 <Typography sx={{fontSize: {xs: "0.8rem", sm: "1rem", md: "1.3rem"}}}
                 // variant="h6"
                  gutterBottom>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    The Myanmar Student Society (MSS) connects Myanmar students through cultural events, support, and networking. Join our community!
                 </Typography>
                 <Button variant="contained" color="primary" 
+                onClick={() => navigate("/aboutus")}
                 // size="medium"
                 sx={{
                     fontSize: {xs: "0.8rem", sm: "1rem", md: "1.2rem"},

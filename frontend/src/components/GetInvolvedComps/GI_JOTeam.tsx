@@ -30,12 +30,9 @@ const GI_JOTeam = () => {
                     mx: "6rem",
                 }}
                 >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-                    eprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-                    pariatur. Excepteur sint deserunt mollit anim id est laborum.      
+                    Have you ever wondered what goes on behind the scene of MSS events?
+                    Join the MSS team now and create valuable friendships with your team
+                    members. Bonus: MSS is AHEGS approved!
                 </Typography>
             </Grid>
             <Grid size={{xs: 12, md: 6}}
@@ -54,9 +51,9 @@ const GI_JOTeam = () => {
                     overflow: "auto",
                 }}
                 >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  
-                    pariatur. Excepteur sint deserunt mollit anim id est laborum.      
+                    MSS elects our executive team during the AGM (Term 3) period every year.
+                    Apply for a position at our executive team, where you can be a part of the
+                    planning and coordinating process of MSS events.       
                 </Typography>
                 <Button variant="contained" color="primary" size="medium"
                 sx={{
@@ -68,6 +65,7 @@ const GI_JOTeam = () => {
                     borderRadius: "11px",
                     textTransform: "none",
                     fontSize: "0.95rem",
+                    opacity: "0.6"
                 }}
                 >
                     <Stack>
@@ -77,7 +75,7 @@ const GI_JOTeam = () => {
                             color: "white",
                             fontsize: "0.01em"
                         }}
-                        >Click here to apply!!</Typography>
+                        >Stay Tuned!!</Typography>
                     </Stack>
                 </Button>
             </Grid>
@@ -97,12 +95,13 @@ const GI_JOTeam = () => {
                     overflow: "auto",
                 }}
                 >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris  
-                    pariatur. Excepteur sint deserunt mollit anim id est laborum.      
+                    Subcommittee members will be recruited during the EGM period.
+                    MSS members have a choice of either joining the Events Subcom or
+                    Media and Publicity Subcom. Take part in facilitating MSS activities
+                    and media promotion by joining our subcom!       
                 </Typography>
                 <Button variant="contained" color="primary" size="medium"
+                onClick={() => window.open("https://tr.ee/RhTd5-vtRU", "_blank")}
                 sx={{
                     backgroundColor: "black",
                     color: "#FFA700",
@@ -112,17 +111,17 @@ const GI_JOTeam = () => {
                     borderRadius: "11px",
                     textTransform: "none",
                     fontSize: "0.95rem",
-                    opacity: "0.6"
+                    
                 }}
                 >
                     <Stack>
-                        <Typography variant="h6">Applications Closed</Typography>
+                        <Typography variant="h6">Applications Opened</Typography>
                         <Typography
                         sx={{
                             color: "white",
                             fontsize: "0.01em"
                         }}
-                        >Stay Tuned!!</Typography>
+                        >Click here to apply!!</Typography>
                     </Stack>
                 </Button>
             </Grid>

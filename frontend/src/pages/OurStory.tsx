@@ -114,25 +114,31 @@ const OurStory = () => {
         <Timelinecard
           time="2012"
           activity="MSS born"
-          details="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          details="Ko Thu Ya founded MSS"
           dotcolor="#ffd700"
         />
         <Timelinecard
-          time="20xx"
-          activity="Loerm ipsum"
-          details="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          time="2022"
+          activity="Thadingyut Festival"
+          details="our biggest event yet! UNSW Myanmar Student Society x International Markets"
           dotcolor="#8bb174"
         />
         <Timelinecard
-          time="20xx"
-          activity="Lorem ipsum"
-          details="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          time="2022"
+          activity="Won 2022 Club Cultural Award"
+          details="MSS won 2022 Club Cultural Award for promoting artistic or ethnocultural expression within the UNSW community"
           dotcolor="#ee6055"
         />
         <Timelinecard
-          time="20xx"
-          activity="Lorem ipsum"
-          details="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          time="2023"
+          activity="AHEGS Approved"
+          details="AHEGS stands for the Australian Higher Education Graduation Statement. It is a document issued to graduates detailing their academic achievements and extracurricular activities alongside their graduation statement."
+          dotcolor="#ffd700"
+        />
+        <Timelinecard
+          time="2024 onwards"
+          activity="More Events for the fun"
+          details="Stay Tuned to connect with fellow Burmese students"
           dotcolor="#ffd700"
         />
       </Timeline>
