@@ -42,7 +42,7 @@ export const EVENTS: Event[] = [
   },
   {
     id: 2,
-    name: "Aus Visa Pathways 2024",
+    name: "Australia Visa Pathways 2024",
     date: "18TH SEP 2024",
     time: "6:00PM - 8:00PM",
     location: "Michael Hintze Theatre",

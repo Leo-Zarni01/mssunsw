@@ -5,6 +5,7 @@ import React from 'react';
 import { Event } from './eventDetailsTemplate';
 
 const PastEventDetailsWovenPhotos: React.FC<{ event: Event}> = ({ event }) => {
+  const photosRoute = window.location.href + '/photos';
   const theme = useTheme();
   const isNormalScreen = useMediaQuery(theme.breakpoints.down('xl'));
 
@@ -188,7 +189,7 @@ const PastEventDetailsWovenPhotos: React.FC<{ event: Event}> = ({ event }) => {
             backgroundColor: '#333333',
           },
         }}>
-          Explore More Photos
+          <a href={photosRoute}> Explore More Photos </a>
         </Button>
       </Box>
     </Box>
