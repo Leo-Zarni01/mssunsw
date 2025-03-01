@@ -7,6 +7,8 @@ import { motion } from "framer-motion"
 import { useEffect, useState } from "react";
 import "@fontsource/poppins";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { useNavigate } from "react-router-dom";
+
 
 
 const theme = createTheme({
@@ -23,6 +25,7 @@ const HP_SS = () => {
     const text = "မင်္ဂလာပါ..."
     const [displayedText, setDisplayedText] = useState("");
     const [index, setIndex] = useState(0);
+    const navigate = useNavigate();
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -148,6 +151,7 @@ const HP_SS = () => {
                     The Myanmar Student Society (MSS) connects Myanmar students through cultural events, support, and networking. Join our community!
                 </Typography>
                 <Button variant="contained" color="primary" 
+                onClick={() => navigate("/aboutus")}
                 // size="medium"
                 sx={{
                     fontSize: {xs: "0.8rem", sm: "1rem", md: "1.2rem"},

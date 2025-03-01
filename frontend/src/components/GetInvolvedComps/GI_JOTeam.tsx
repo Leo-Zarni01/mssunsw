@@ -65,6 +65,7 @@ const GI_JOTeam = () => {
                     borderRadius: "11px",
                     textTransform: "none",
                     fontSize: "0.95rem",
+                    opacity: "0.6"
                 }}
                 >
                     <Stack>
@@ -74,7 +75,7 @@ const GI_JOTeam = () => {
                             color: "white",
                             fontsize: "0.01em"
                         }}
-                        >Click here to apply!!</Typography>
+                        >Stay Tuned!!</Typography>
                     </Stack>
                 </Button>
             </Grid>
@@ -100,6 +101,7 @@ const GI_JOTeam = () => {
                     and media promotion by joining our subcom!       
                 </Typography>
                 <Button variant="contained" color="primary" size="medium"
+                onClick={() => window.open("https://tr.ee/RhTd5-vtRU", "_blank")}
                 sx={{
                     backgroundColor: "black",
                     color: "#FFA700",
@@ -109,17 +111,17 @@ const GI_JOTeam = () => {
                     borderRadius: "11px",
                     textTransform: "none",
                     fontSize: "0.95rem",
-                    opacity: "0.6"
+                    
                 }}
                 >
                     <Stack>
-                        <Typography variant="h6">Applications Closed</Typography>
+                        <Typography variant="h6">Applications Opened</Typography>
                         <Typography
                         sx={{
                             color: "white",
                             fontsize: "0.01em"
                         }}
-                        >Stay Tuned!!</Typography>
+                        >Click here to apply!!</Typography>
                     </Stack>
                 </Button>
             </Grid>

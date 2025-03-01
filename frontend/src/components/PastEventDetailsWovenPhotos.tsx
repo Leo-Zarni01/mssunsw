@@ -24,7 +24,7 @@ import img3900 from '../assets/images/picnic24T2/IMG_3900.JPG';
 import img3905 from '../assets/images/picnic24T2/IMG_3905.JPG';
 import img3914 from '../assets/images/picnic24T2/IMG_3914.JPG';
 import img7481 from '../assets/images/picnic24T2/IMG_7481.JPG';
-import { transform } from 'framer-motion';
+// import { transform } from 'framer-motion';
 
 const images = [
   img3826,
@@ -46,6 +46,7 @@ const images = [
   img3822,
   img3815,
 ]
+
 
 const PastEventDetailsWovenPhotos = () => {
   // const theme = useTheme();
