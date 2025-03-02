@@ -1,6 +1,7 @@
 import EventCard from "../components/EventCard"; import Footer from "../components/Footer";
 import NavBar from "../components/NavComps/NavBar";
 import { EVENTS, UPCOMINGEVENTS } from "../components/eventDetailsTemplate";
+import Egg1 from "../components/EasterEggs/Egg1"
 
 const Events = () => {
   return (
@@ -14,8 +15,9 @@ const Events = () => {
           ))}
         </div>
       </div>
-      <div className="mt-8 mb-8 flex flex-col items-center px-6 py-12">
-        <h1 className="text-3xl text-[#FFA701] mb-8">Past Events</h1>
+      < Egg1 />
+      <div className="min-h-screen flex flex-col items-center px-6 py-12">
+        <h1 className="text-3xl text-[#FFA700] mb-8">Past Events</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-16 auto-rows-fr">
           {EVENTS.slice(0, 6).map((event) => (  // Always ensures six cards are displayed
             <EventCard key={event.id} event={event} type="past" />
