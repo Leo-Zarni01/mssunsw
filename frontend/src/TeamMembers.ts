@@ -41,7 +41,7 @@ export const committeeMembers: CommitteeTeam = {
         name: "Thet Htar Aung",
         title: "Secretary",
         imageUrl: formatImageFileName("2025", "executives", "Thet Htar Aung"),
-        memory: "Singing Lat Tee and Dancing at Karaoke on a random Saturday night",
+        memory: "My favorite memory with MSS is when we went out for a catch- up dinner after Summer Holidays. Post dinner, we went to sing Karaoke at TownHall and it was probably one of the very rare fun moments I’ve had in a while since I was under a lot of stress at the time. For someone who was still fairly new to the MSS team, all of us dancing to လပ်တီး and jamming to random Burmese songs was quite a memory I’d always cherish. Hanging out with everyone on the team gave me a sense of belonging especially when I was away from home.",
       },
       {
         name: "Phyo Mon Su",

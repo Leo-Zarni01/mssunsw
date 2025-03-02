@@ -7,7 +7,7 @@ const Events = () => {
   return (
     <>
       <NavBar isDark={false} />
-      <div className="min-h-screen flex flex-col justify-center items-center">
+      <div className="min-h-auto flex flex-col justify-center items-center">
         <p className="text-3xl text-[#FFA700]">Upcoming Events</p>
         <div className="mt-12 flex justify-center items-center">
           {UPCOMINGEVENTS.slice(0, 6).map((event) => (

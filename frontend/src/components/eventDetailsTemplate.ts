@@ -70,7 +70,7 @@ export const UPCOMINGEVENTS: Event[] = [
   {
     id: 1,
     name: "Fresher Welcome 25T1",
-    date: "2ND FEB 2025",
+    date: "2ND MAR 2025",
     time: "10:30AM - 3:00PM",
     location: "COLOMBO LG01",
     imageUrl: "/events/Fresher Welcome 25T1/Fresher Welcome poster 25T1.png",
