@@ -88,7 +88,7 @@ function HiddenButton() {
           variant="contained"
           color="primary"
           sx={{
-            opacity: found ? 1 : 1,
+            opacity: found ? 1 : 0,
             transition: "opacity 0.5s",
             borderRadius: "50%",
             minWidth: "64px",
