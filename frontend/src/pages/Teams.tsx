@@ -3,6 +3,7 @@ import NavBar from "../components/NavComps/NavBar";
 import { SliderComponent } from "../components/Slider";
 import { committeeMembers } from "../TeamMembers";
 import Footer from "../components/Footer";
+import Egg1 from "../components/EasterEggs/Egg1";
 
 const Teams = () => {
   const [year, setYear] = useState<number>(2025);
@@ -40,7 +41,7 @@ const Teams = () => {
             ))}
           </div>
         </div>
-
+        <Egg1 />
         {/* Subcommittees Section (2024 & 2025) */}
         {(year === 2024 || year === 2025) && (
           <>
