@@ -17,7 +17,7 @@ export interface CommitteeTeam {
 }
 
 const formatImageFileName = (year: string, position: string, name: string) => {
-  return `teams/${year}/${position}/${name.replace(/ /g, " ")}.jpeg`;
+  return `teams/${year}/${position}/${name.replace(/ /g, " ")}.webp`;
 };
 
 const placeHolderUrl: string = "https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
