@@ -14,7 +14,7 @@ const theme = createTheme({
 
 const EventRegistrationForm = () => {
   const handleButtonClick = () => {
-    window.open('https://docs.google.com/forms/d/e/1FAIpQLSfmo3733gYYM93mHpwvQ6MKthEopuXLmJuxPFiVMZ8yjxKxhg/viewform');
+    window.open('https://docs.google.com/forms/d/e/1FAIpQLSeqU9ohMxV-NuLtjuiX_p7u2Z-BmBY5AX7SkgjySHgKa-NNiQ/viewform');
   }
   
   return (
