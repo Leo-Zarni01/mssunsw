@@ -1,16 +1,10 @@
-// import React, { useRef, useState } from 'react';
-// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 import EventCard from "../EventCard";
-import { Box } from '@mui/material';
-// import logo from '../../assets/MSS_Logo.webp'
-
 import './styles.css';
-
-// import required modules
 import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
 import { Event, UPCOMINGEVENTS } from '../eventDetailsTemplate';
-import { Typography } from '@mui/material';
+import StayTuned from '../StayTuned';
+import { Box } from '@mui/material';
 
 const Carousel = () => {
   return (
@@ -33,32 +27,9 @@ const Carousel = () => {
         className="eventsSwiper"
       >
         { UPCOMINGEVENTS.length === 0?
-          <>
-            <Box
-              sx={{
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-                marginTop: '150px',
-              }}
-            >
-              <Box
-                sx={{
-                  width: 300,
-                  height: 100,
-                  boxShadow: 5,
-                  borderRadius: "20px",
-                  backgroundColor: '#ffffff',
-                  display: 'flex',
-                  justifyContent: 'center',
-                  alignItems: 'center',
-                  textAlign: 'center',
-                }}
-              >
-                <Typography> Stay tuned for Thingyan!!! </Typography>
-              </Box>
-            </Box>
-          </> :
+          <Box sx={{ marginTop: '150px'}}>
+            <StayTuned></StayTuned>
+          </Box> :
           <>
             {UPCOMINGEVENTS.slice(0, 3).map((event: Event) => (  // Always ensures six cards are displayed
               <SwiperSlide style={{ width: "300px", height: "470px"  }}>

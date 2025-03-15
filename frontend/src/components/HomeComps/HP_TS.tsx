@@ -1,12 +1,9 @@
 import Grid from '@mui/material/Grid2';
 import { Typography } from '@mui/material';
 import { useState } from "react";
-
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Carousel from './Carousel';
 import PastCarousel from './PastCarousel';
-
-
 
 const theme = createTheme({
     typography: {
@@ -15,7 +12,6 @@ const theme = createTheme({
 });
 
 const HP_TS = () => {
-
     const [eventState, setEventState] = useState("past");
 
     return (

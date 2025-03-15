@@ -1,11 +1,8 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Event, EVENTS } from "../eventDetailsTemplate";
 import EventCard from "../EventCard";
-
 import './styles.css';
-
 import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
-
 
 const PastCarousel = () => {
   return (
