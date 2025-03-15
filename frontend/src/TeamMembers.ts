@@ -96,7 +96,7 @@ export const committeeMembers: CommitteeTeam = {
         imageUrl: placeHolderUrl,
       },
       {
-        name: "Khine Su Pyae San",
+        name: "Khaing Su Pyae San",
         title: "Media",
         imageUrl: formatImageFileName("2025", "subcommittees", "Khaing Su Pyae San"),
       },
