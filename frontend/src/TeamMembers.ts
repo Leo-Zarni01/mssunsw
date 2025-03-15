@@ -78,12 +78,12 @@ export const committeeMembers: CommitteeTeam = {
       {
         name: "Phoo Mya Chai",
         title: "Events",
-        imageUrl: formatImageFileName("2025", "subcommittees", "Phoo-Mya-Chai"),
+        imageUrl: formatImageFileName("2025", "subcommittees", "Phoo Mya Chai"),
       },
       {
         name: "Thet Hsu San",
         title: "Events",
-        imageUrl: formatImageFileName("2025", "subcommittees", "Thae_Hsu_San"),
+        imageUrl: formatImageFileName("2025", "subcommittees", "Thae Hsu San"),
       },
       {
         name: "Wuntha Naing",
@@ -98,7 +98,7 @@ export const committeeMembers: CommitteeTeam = {
       {
         name: "Khine Su Pyae San",
         title: "Media",
-        imageUrl: formatImageFileName("2025", "subcommittees", "Khaing_Su_Pyae_San"),
+        imageUrl: formatImageFileName("2025", "subcommittees", "Khaing Su Pyae San"),
       },
       {
         name: "Chaw Su Thwe",
@@ -108,7 +108,7 @@ export const committeeMembers: CommitteeTeam = {
       {
         name: "Swan Htet Naing",
         title: "Media",
-        imageUrl: placeHolderUrl,
+        imageUrl: formatImageFileName("2025", "subcommittees", "Swan Htet Naing"),
       },
       {
         name: "Ponnya Thein Tun",
@@ -326,7 +326,7 @@ export const committeeMembers: CommitteeTeam = {
       {
         name: "Joseph Aung Thu",
         title: "Arc Delegate",
-        imageUrl: formatImageFileName("2022", "executives", "Joseph Aung Thu"),
+        imageUrl: formatImageFileName("2023", "executives", "Joseph Aung Thu"),
       },
       {
         name: "Ricky Chan",
@@ -368,12 +368,12 @@ export const committeeMembers: CommitteeTeam = {
       {
         name: "Hein Sett Aung",
         title: "General",
-        imageUrl: formatImageFileName("2024", "executives", "Hein Sett Aung"),
+        imageUrl: formatImageFileName("2023", "executives", "Hein Sett Aung"),
       },
       {
         name: "Nile Yar",
         title: "General",
-        imageUrl: formatImageFileName("2024", "executives", "Nile Yar"),
+        imageUrl: formatImageFileName("2023", "executives", "Nile Yar"),
       },
       {
         name: "Kyaw Lin Htike",
