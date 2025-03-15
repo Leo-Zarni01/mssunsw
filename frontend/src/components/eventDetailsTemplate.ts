@@ -114,11 +114,8 @@ export const EVENTS: Event[] = [
       "/events/Fresher Welcome 25T1/IMG_0394 2.JPG",
     ],
   },
-]
-
-export const UPCOMINGEVENTS: Event[] = [
   {
-    id: 1,
+    id: 5,
     name: "Inter Cultural Cup 25T1",
     date: "14TH MAR 2025",
     time: "10:00AM - 4:00PM",
@@ -127,4 +124,8 @@ export const UPCOMINGEVENTS: Event[] = [
     description: "Join us to play some thrilling games of soccer and represent MYANMAR in UNSW’s intercultural cup 🇲🇲 We’re looking for players to join our team: 7 players minimum (6 outfield+1 GK including a minimum of 2 females) ✨ And that’s not all…THERE WILL BE PRIZES FOR THE WINNING TEAMS 🙌🏆 Whether your here to play or cheer us on we’re excited to see you there 🥳",
     imagesUrl: ["/events/Inter Cultural Cup 25T1/Intercultural_Cup_Poster.webp"],
   }
+]
+
+export const UPCOMINGEVENTS: Event[] = [
+  
 ]
