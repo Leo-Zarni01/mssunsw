@@ -12,7 +12,6 @@ import { TimelineOppositeContent } from "@mui/lab";
 import { FC } from "react";
 import Footer from "../components/Footer";
 import NavBar from "../components/NavComps/NavBar";
-import Egg1 from "../components/EasterEggs/Egg1"
 
 const theme = createTheme({
   typography: {
@@ -111,7 +110,6 @@ const OurStory = () => {
         Our Journey
       </Typography>
 
-      <Egg1 />
       <Timeline position="alternate">
         <Timelinecard
           time="2012"

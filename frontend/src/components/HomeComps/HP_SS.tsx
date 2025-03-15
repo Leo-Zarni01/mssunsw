@@ -6,13 +6,11 @@ import { useEffect, useState } from "react";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { useNavigate } from "react-router-dom";
 
-
 const theme = createTheme({
     typography: {
         fontFamily: "Poppins, sans-serif",
     },
 });
-
 
 const HP_SS = () => {
     const text = "မ င်္ဂ လာ ပါ . . ."
@@ -36,7 +34,6 @@ const HP_SS = () => {
     
         return () => clearInterval(interval);
     }, [index]);
-
 
     return(
         <ThemeProvider theme={theme}>

@@ -9,7 +9,6 @@ import ArrowForwardIos from "@mui/icons-material/ArrowForwardIos";
 import NavBar from "../components/NavComps/NavBar";
 import Footer from "../components/Footer";
 import { Event, EVENTS } from "../components/eventDetailsTemplate";
-import Egg1 from "../components/EasterEggs/Egg1";
 
 const theme = createTheme({
   palette: {
@@ -72,7 +71,6 @@ const PastEventPhotoGallery = () => {
           <NavBar isDark={true}/>
           <Typography variant="h1" color="#FFA700" align="center">
               {event.name}
-              < Egg1 />
           </Typography>
           <Box sx={{ width: "100%", padding: 2, }}>
               <Masonry columns={{ xs: 2, sm: 3, md: 4, lg: 5 }} spacing={2}>

@@ -74,7 +74,48 @@ export const committeeMembers: CommitteeTeam = {
         memory: "Being a part of MSS has allowed me to connect with my Burmese culture and find a community that makes me feel like I’m not so far away from home. As someone who has always felt a bit alienated from my Burmese heritage, I will never forget how welcome I felt at my first couple MSS events. I was driven to create the same feeling of belonging for other Burmese students who desired to feel more connected to their Burmese culture. My favourite memories during my time in MSS have definitely been the ones that have come from working within my team, such as the chaos of cooking food for events and organising Thingyan.",
       },
     ],
-    subcommittees: [],
+    subcommittees: [
+      {
+        name: "Phoo Mya Chai",
+        title: "Events",
+        imageUrl: formatImageFileName("2025", "subcommittees", "Phoo Mya Chai"),
+      },
+      {
+        name: "Thet Hsu San",
+        title: "Events",
+        imageUrl: formatImageFileName("2025", "subcommittees", "Thae Hsu San"),
+      },
+      {
+        name: "Wuntha Naing",
+        title: "Events",
+        imageUrl: placeHolderUrl,
+      },
+      {
+        name: "Myat Noe Khin",
+        title: "Events",
+        imageUrl: placeHolderUrl,
+      },
+      {
+        name: "Khine Su Pyae San",
+        title: "Media",
+        imageUrl: formatImageFileName("2025", "subcommittees", "Khaing Su Pyae San"),
+      },
+      {
+        name: "Chaw Su Thwe",
+        title: "Media",
+        imageUrl: formatImageFileName("2024", "subcommittees", "Chaw Su Thwe"),
+      },
+      {
+        name: "Swan Htet Naing",
+        title: "Media",
+        imageUrl: formatImageFileName("2025", "subcommittees", "Swan Htet Naing"),
+      },
+      {
+        name: "Ponnya Thein Tun",
+        title: "Media",
+        imageUrl: placeHolderUrl,
+      },
+    ],
   },
   2024: {
     executives: [
@@ -148,7 +189,6 @@ export const committeeMembers: CommitteeTeam = {
       {
         name: "Paing Paing",
         title: "Media & Publicity",
-
         imageUrl: formatImageFileName("2024", "subcommittees", "Paing Paing"),
       },
       {
@@ -200,65 +240,66 @@ export const committeeMembers: CommitteeTeam = {
         title: "Arc Delegate",
         imageUrl: formatImageFileName("2023", "executives", "Hein Sett Aung"),
       },
+      
+    ],
+    subcommittees: [
       {
         name: "Eindray Aung",
-        title: "Media and Publicity Director",
+        title: "Media and Publicity",
         imageUrl: formatImageFileName("2023", "executives", "Eaindray Aung"),
       },
 
       {
         name: "Paing Paing",
-        title: "Media and Publicity Director",
+        title: "Media and Publicity",
         imageUrl: formatImageFileName("2023", "executives", "Paing Paing"),
       },
 
       {
         name: "Kyi Sin Lin Htun",
-        title: "Media and Publicity Director",
+        title: "Media and Publicity",
         imageUrl: formatImageFileName("2023", "executives", "Kyi Sin Lin Htun"),
       },
 
       {
         name: "Phoebe Aung",
-        title: "Events Director",
+        title: "Events",
         imageUrl: formatImageFileName("2023", "executives", "Phoebe Aung"),
       },
 
       {
         name: "Valerie Lee",
-        title: "Events Director",
+        title: "Events",
         imageUrl: formatImageFileName("2023", "executives", "Valerie Lee"),
       },
 
       {
         name: "Rose Susan",
-        title: "Catering Director",
+        title: "Catering",
         imageUrl: formatImageFileName("2023", "executives", "Rose Susan"),
       },
 
       {
         name: "Kyaw Lin Htike",
-        title: "Logistics Director",
+        title: "Logistics",
         imageUrl: formatImageFileName("2023", "executives", "Kyaw Lin Htike"),
       },
       {
         name: "Aung Phyo San",
-        title: "Logistics Director",
+        title: "Logistics",
         imageUrl: formatImageFileName("2023", "executives", "Aung Phyo San"),
       },
       {
         name: "Zayar Htut",
-        title: "Logistics Director",
+        title: "Logistics",
         imageUrl: formatImageFileName("2023", "executives", "Zayar Htut"),
       },
       {
         name: "Pyae Phyo Han",
-        title: "Logistics Director",
+        title: "Logistics",
         imageUrl: formatImageFileName("2023", "executives", "Pyae Phyo Han"),
       },
-
     ],
-    subcommittees: [],
   },
   2022: {
     executives: [
@@ -275,19 +316,70 @@ export const committeeMembers: CommitteeTeam = {
       {
         name: "Kyi Shinn Khin",
         title: "Secretary",
-        imageUrl: placeHolderUrl,
+        imageUrl: formatImageFileName("2022", "executives", "Kyi Shinn Khin"),
       },
       {
         name: "Zu Zu Kyaw Lwin",
         title: "Treasurer",
-        imageUrl: placeHolderUrl,
+        imageUrl: formatImageFileName("2022", "executives", "Zu Zu Kyaw Lwin"),
       },
       {
         name: "Joseph Aung Thu",
         title: "Arc Delegate",
-        imageUrl: formatImageFileName("2022", "executives", "Joseph Aung Thu"),
+        imageUrl: formatImageFileName("2023", "executives", "Joseph Aung Thu"),
+      },
+      {
+        name: "Ricky Chan",
+        title: "Grievance Officer",
+        imageUrl: formatImageFileName("2022", "executives", "Ricky Chan"),
       },
     ],
-    subcommittees: [],
+    subcommittees: [
+      {
+        name: "Thin Ei San(Grace)",
+        title: "Media",
+        imageUrl: placeHolderUrl,
+      },
+      {
+        name: "Khin Thi Win",
+        title: "Media",
+        imageUrl: formatImageFileName("2022", "subcommittees", "Khin Thi Win"),
+      },
+      {
+        name: "Yamone Khin",
+        title: "Events",
+        imageUrl: formatImageFileName("2022", "subcommittees", "Yamone Khin"),
+      },
+      {
+        name: "Phoebe Aung",
+        title: "Events",
+        imageUrl: formatImageFileName("2023", "executives", "Phoebe Aung"),
+      },
+      {
+        name: "Khine Zar Hein",
+        title: "Publicity",
+        imageUrl: placeHolderUrl,
+      },
+      {
+        name: "Nyan Lin Htet Aung",
+        title: "Logistics",
+        imageUrl: formatImageFileName("2022", "subcommittees", "Nyan Lin Htet Aung"),
+      },
+      {
+        name: "Hein Sett Aung",
+        title: "General",
+        imageUrl: formatImageFileName("2023", "executives", "Hein Sett Aung"),
+      },
+      {
+        name: "Nile Yar",
+        title: "General",
+        imageUrl: formatImageFileName("2023", "executives", "Nile Yar"),
+      },
+      {
+        name: "Kyaw Lin Htike",
+        title: "General",
+        imageUrl: formatImageFileName("2023", "executives", "Kyaw Lin Htike"),
+      },
+    ],
   },
 };
