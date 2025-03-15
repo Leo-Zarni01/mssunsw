@@ -29,7 +29,7 @@ const PastCarousel = () => {
         className="mySwiper"
       >
         
-        {EVENTS.slice(0, 6).map((event: Event) => (  // Always ensures six cards are displayed
+        {EVENTS.slice(0, 6).reverse().map((event: Event) => (  // Always ensures six cards are displayed
             <SwiperSlide style={{ width: "300px", height: "470px"  }}>
                 <EventCard key={event.id} event={event} type='past' />
             </SwiperSlide>

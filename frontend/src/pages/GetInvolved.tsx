@@ -5,9 +5,6 @@ import GI_JOTeam from "../components/GetInvolvedComps/GI_JOTeam";
 import GI_Bft from "../components/GetInvolvedComps/GI_Bft";
 import { motion } from "framer-motion";
 import Footer from "../components/Footer";
-import Egg1 from "../components/EasterEggs/Egg1"
-
-
 
 const themeGetInvolved = createTheme({
     typography: {
@@ -40,7 +37,6 @@ const GetInvolved = () => {
                 transition={{ duration: 0.8, delay:1, ease: "easeOut" }}
                 >
                     <GI_Bft />
-                    <Egg1 />
                 </motion.div> 
                 <motion.div
                 initial={{ opacity: 0, y: 50 }} // Start hidden and below
