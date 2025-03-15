@@ -74,7 +74,48 @@ export const committeeMembers: CommitteeTeam = {
         memory: "Being a part of MSS has allowed me to connect with my Burmese culture and find a community that makes me feel like I’m not so far away from home. As someone who has always felt a bit alienated from my Burmese heritage, I will never forget how welcome I felt at my first couple MSS events. I was driven to create the same feeling of belonging for other Burmese students who desired to feel more connected to their Burmese culture. My favourite memories during my time in MSS have definitely been the ones that have come from working within my team, such as the chaos of cooking food for events and organising Thingyan.",
       },
     ],
-    subcommittees: [],
+    subcommittees: [
+      {
+        name: "Phoo Mya Chai",
+        title: "Events",
+        imageUrl: formatImageFileName("2025", "subcommittees", "Phoo-Mya-Chai"),
+      },
+      {
+        name: "Thet Hsu San",
+        title: "Events",
+        imageUrl: formatImageFileName("2025", "subcommittees", "Thae_Hsu_San"),
+      },
+      {
+        name: "Wuntha Naing",
+        title: "Events",
+        imageUrl: placeHolderUrl,
+      },
+      {
+        name: "Myat Noe Khin",
+        title: "Events",
+        imageUrl: placeHolderUrl,
+      },
+      {
+        name: "Khine Su Pyae San",
+        title: "Media",
+        imageUrl: formatImageFileName("2025", "subcommittees", "Khaing_Su_Pyae_San"),
+      },
+      {
+        name: "Chaw Su Thwe",
+        title: "Media",
+        imageUrl: formatImageFileName("2024", "subcommittees", "Chaw Su Thwe"),
+      },
+      {
+        name: "Swan Htet Naing",
+        title: "Media",
+        imageUrl: placeHolderUrl,
+      },
+      {
+        name: "Ponnya Thein Tun",
+        title: "Media",
+        imageUrl: placeHolderUrl,
+      },
+    ],
   },
   2024: {
     executives: [
@@ -148,7 +189,6 @@ export const committeeMembers: CommitteeTeam = {
       {
         name: "Paing Paing",
         title: "Media & Publicity",
-
         imageUrl: formatImageFileName("2024", "subcommittees", "Paing Paing"),
       },
       {
@@ -276,12 +316,12 @@ export const committeeMembers: CommitteeTeam = {
       {
         name: "Kyi Shinn Khin",
         title: "Secretary",
-        imageUrl: placeHolderUrl,
+        imageUrl: formatImageFileName("2022", "executives", "Kyi Shinn Khin"),
       },
       {
         name: "Zu Zu Kyaw Lwin",
         title: "Treasurer",
-        imageUrl: placeHolderUrl,
+        imageUrl: formatImageFileName("2022", "executives", "Zu Zu Kyaw Lwin"),
       },
       {
         name: "Joseph Aung Thu",
@@ -306,9 +346,9 @@ export const committeeMembers: CommitteeTeam = {
         imageUrl: formatImageFileName("2022", "subcommittees", "Khin Thi Win"),
       },
       {
-        name: "Yamin Khin",
+        name: "Yamone Khin",
         title: "Events",
-        imageUrl: placeHolderUrl,
+        imageUrl: formatImageFileName("2022", "subcommittees", "Yamone Khin"),
       },
       {
         name: "Phoebe Aung",

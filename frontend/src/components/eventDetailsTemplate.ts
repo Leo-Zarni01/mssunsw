@@ -74,11 +74,8 @@ export const EVENTS: Event[] = [
     description: "မင်္ဂလာပါ everyone and to all the freshers ❤️ Join us for an exciting day at our FRESHER WELCOME where we will host a scavenger hunt, awesome games and…FREE FOOD for all members 🥳 Meet our MSS committee members and make some new friends within the MSS community. REGISTRATION LINKED IN OUR BIO ✨. See you all there 🤩",
     imagesUrl: ["/events/Fresher Welcome 25T1/Fresher Welcome poster 25T1.png"],
   },
-]
-
-export const UPCOMINGEVENTS: Event[] = [
   {
-    id: 1,
+    id: 5,
     name: "Inter Cultural Cup 25T1",
     date: "14TH MAR 2025",
     time: "10:00AM - 4:00PM",
@@ -87,4 +84,8 @@ export const UPCOMINGEVENTS: Event[] = [
     description: "Join us to play some thrilling games of soccer and represent MYANMAR in UNSW’s intercultural cup 🇲🇲 We’re looking for players to join our team: 7 players minimum (6 outfield+1 GK including a minimum of 2 females) ✨ And that’s not all…THERE WILL BE PRIZES FOR THE WINNING TEAMS 🙌🏆 Whether your here to play or cheer us on we’re excited to see you there 🥳",
     imagesUrl: ["/events/Inter Cultural Cup 25T1/Intercultural_Cup_Poster.webp"],
   }
+]
+
+export const UPCOMINGEVENTS: Event[] = [
+  
 ]

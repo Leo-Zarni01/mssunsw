@@ -16,7 +16,7 @@ const theme = createTheme({
 
 const HP_TS = () => {
 
-    const [eventState, setEventState] = useState("upcoming");
+    const [eventState, setEventState] = useState("past");
 
     return (
         <ThemeProvider theme={theme}>
