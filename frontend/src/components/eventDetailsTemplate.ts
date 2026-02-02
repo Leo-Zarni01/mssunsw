@@ -7,6 +7,7 @@ export interface Event {
   imageUrl: string;
   description: string;
   imagesUrl: string[];
+  folderName?: string;
 }
 
 
@@ -184,6 +185,7 @@ export const EVENTS: Event[] = [
       "/events/Intercultural Cup 25T1/IMG_9632.webp",
       "/events/Intercultural Cup 25T1/IMG_9645.webp",
     ],
+    folderName: "InterculturalCup25T1"
   }
 ]
 

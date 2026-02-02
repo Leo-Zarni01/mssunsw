@@ -5,6 +5,8 @@ interface EventProps {
   type: string,
 }
 
+const CDNURL = import.meta.env.VITE_CDN_URL + "events/";
+
 const EventCard: React.FC<EventProps> = ({ event, type }) => {
   let route = "";
   if (type === "past") {
@@ -16,8 +18,8 @@ const EventCard: React.FC<EventProps> = ({ event, type }) => {
     <div className="w-80 h-full border border-orange-100 rounded-2xl shadow-md overflow-hidden bg-white font-poppins">
       <div className="relative">
         <img
-          src={event.imageUrl}
-          alt={event.name}
+          src={`${CDNURL}${event.folderName}/coverphoto.jpg`}
+          alt={event.folderName}
           className="w-full h-48 object-cover"
         />
         {/* <div className="absolute inset-0 flex justify-center items-center bg-black bg-opacity-50">

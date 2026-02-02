@@ -3,11 +3,42 @@ import { styled } from '@mui/material/styles';
 import '../App.css';
 import React from 'react';
 import { Event } from './eventDetailsTemplate';
+import { useState, useEffect } from "react";
+import { supabase } from '../supabase-client';
+import type { FileObject } from "@supabase/storage-js";
+
+const CDNURL = import.meta.env.VITE_CDN_URL + "events/";
 
 const PastEventDetailsWovenPhotos: React.FC<{ event: Event}> = ({ event }) => {
+
   const photosRoute = window.location.href + '/photos';
   const theme = useTheme();
   const isNormalScreen = useMediaQuery(theme.breakpoints.down('xl'));
+  const [ images, setImages ] =useState<FileObject[]>([]);
+
+  useEffect(() => {
+
+    console.log(event.folderName)
+    async function getImages() {
+      const { data, error } = await supabase
+      .storage
+      .from('events')
+      .list(event.folderName + '/', {
+        limit: 100,
+        offset: 2,
+        sortBy: { column: 'name', order: 'asc' },
+      })
+
+      if (data !== null) {
+        setImages(data)
+        console.log(data)
+      } else {
+        alert(error)
+      }
+    }
+
+    getImages();
+  }, [images])
 
   const imagePositionsNormal = [
     { top: '7%', left: '-2%', width: '12%', height: '32%' },
@@ -139,7 +170,7 @@ const PastEventDetailsWovenPhotos: React.FC<{ event: Event}> = ({ event }) => {
           >
             <Box
               component="img"
-              src={event.imagesUrl[index % event.imagesUrl.length]}
+              src={`${CDNURL}${images[index % event.imagesUrl.length].name}`}
               alt={`MSS ${index + 1}`}
               sx={{
                 width: '100%',
