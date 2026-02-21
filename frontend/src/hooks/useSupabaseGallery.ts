@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { supabase } from "../supabase-client";
 import type { FileObject } from "@supabase/storage-js";
 
+// interface for supabase
 interface UseSupabaseGalleryOptions {
   bucket: string;
   folder?: string;
@@ -10,6 +11,7 @@ interface UseSupabaseGalleryOptions {
   offset?: number;
 }
 
+// function for supabase
 export function useSupabaseGallery({
   bucket,
   folder,
@@ -54,6 +56,9 @@ export function useSupabaseGallery({
       isMounted = false;
     };
   }, [bucket, folder, limit]);
+
+
+
 
   return { images, loading, error };
 }
