@@ -7,5 +7,6 @@ export type Event = {
   cover_image: string | null;
   description: string | null;
   images_path: string | null;
+  image_folder_name: string | null;
   past: boolean;
 };

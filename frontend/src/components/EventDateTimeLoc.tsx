@@ -1,7 +1,7 @@
 import { Typography, Box, List, ListItem } from '@mui/material';
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import React from 'react';
-import { Event } from './eventDetailsTemplate';
+import { Event } from '../interface';
 
 const theme = createTheme({
     typography: {

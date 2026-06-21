@@ -1,5 +1,5 @@
 import { Typography } from '@mui/material';
-import { Event } from './eventDetailsTemplate';
+import { Event } from '../interface';
 
 const AboutTheEvent: React.FC<{event: Event}> = ({ event }) => {
   return (

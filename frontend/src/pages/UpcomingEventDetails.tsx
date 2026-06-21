@@ -7,7 +7,10 @@ import EventDateTimeLoc from '../components/EventDateTimeLoc';
 import NavBar from '../components/NavComps/NavBar';
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { useParams } from 'react-router-dom';
-import { UPCOMINGEVENTS } from '../components/eventDetailsTemplate';
+import { useEffect, useState } from "react";
+import { supabase } from "../supabaseClient";
+import type { Event } from "../interface";
+// import { UPCOMINGEVENTS } from '../components/eventDetailsTemplate';
 
 const theme = createTheme({
     typography: {
@@ -27,7 +30,32 @@ const theme = createTheme({
 
 const UpcomingEventDetails = () => {
   const { id } = useParams();
-  const event = UPCOMINGEVENTS.find((e) => e.id === Number(id));
+  // const event = UPCOMINGEVENTS.find((e) => e.id === Number(id));
+  const [event, setEvent] = useState<Event | null>(null);
+  // const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetchEvent();
+  }, [id]);
+
+  async function fetchEvent() {
+    if (!id) return;
+
+    const { data, error } = await supabase
+      .from("events")
+      .select("*")
+      .eq("id", Number(id))
+      .single();
+
+    if (error) {
+      console.error("Error fetching event:", error);
+      setEvent(null);
+    } else {
+      setEvent(data);
+    }
+
+    // setLoading(false);
+  }
 
   return (
     <ThemeProvider theme={theme}>
@@ -39,7 +67,7 @@ const UpcomingEventDetails = () => {
       </Box> */}
       <CardMedia
         component="img"
-        image={event.imageUrl}
+        image={event.cover_image ?? "/placeholder-image.jpg"}
         sx={{
           height: {xl: '1200px'},
         }}
