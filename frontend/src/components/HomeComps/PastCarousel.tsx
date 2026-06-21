@@ -1,10 +1,42 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Event, EVENTS } from "../eventDetailsTemplate";
+// import { Event, EVENTS } from "../eventDetailsTemplate";
 import EventCard from "../EventCard";
 import './styles.css';
 import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
+import type { Event } from "../../interface";
+import { supabase } from "../../supabaseClient";
+import { useEffect, useState } from "react";
 
 const PastCarousel = () => {
+
+  const [pastEvents, setPastEvents] = useState<Event[]>([]);
+  // const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetchPastEvents();
+  }, []);
+
+  async function fetchPastEvents() {
+    const { data, error } = await supabase
+      .from("events")
+      .select("*")
+      .eq("past", true)
+      .order("date", { ascending: false })
+      .limit(6);
+
+    if (error) {
+      console.error("Error fetching past events:", error);
+    } else {
+      setPastEvents(data ?? []);
+    }
+
+    // setLoading(false);
+  }
+
+  // if (loading) {
+  //   return <p className="text-center">Loading past events...</p>;
+  // }
+
   return (
     <>
       <Swiper
@@ -26,7 +58,7 @@ const PastCarousel = () => {
         className="mySwiper"
       >
         
-        {EVENTS.slice(0, 6).reverse().map((event: Event) => (  // Always ensures six cards are displayed
+        {pastEvents.slice(0, 6).reverse().map((event: Event) => (  // Always ensures six cards are displayed
             <SwiperSlide style={{ width: "300px", height: "470px"  }}>
                 <EventCard key={event.id} event={event} type='past' />
             </SwiperSlide>
